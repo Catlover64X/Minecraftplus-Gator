@@ -1,0 +1,11 @@
+{
+  "disc_sound": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "minecraft_gators:cool",
+        "stream": false
+      }
+    ]
+  }
+}

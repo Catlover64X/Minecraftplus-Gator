@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "disc_texture",
+    "name": "Disc",
+    "description": "you just got rick rolled",
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "music": {
+      "value": "CUSTOM:disc_sound"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}
