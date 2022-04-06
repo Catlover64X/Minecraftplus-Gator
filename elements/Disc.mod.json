@@ -4,14 +4,19 @@
   "definition": {
     "texture": "disc_texture",
     "name": "Disc",
-    "description": "you just got rick rolled",
+    "description": "Rick Astley - Never Gonna Give You Up",
     "creativeTab": {
       "value": "CUSTOM:MinecraftplusGator"
     },
     "music": {
       "value": "CUSTOM:disc_sound"
     },
-    "specialInfo": [],
-    "hasGlow": false
+    "specialInfo": [
+      "You just got rickrolled"
+    ],
+    "hasGlow": false,
+    "onRightClickedInAir": {
+      "name": "DiscRightClickedInAir"
+    }
   }
 }

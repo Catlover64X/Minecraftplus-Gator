@@ -1052,6 +1052,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc"
+    },
+    {
+      "name": "DiscRightClickedInAir",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1071,8 +1099,8 @@
       "advancements.blessed.descr": "Use the Cat Alter",
       "entity.minecraft_gators.blaze_king": "Blaze King",
       "block.minecraft_gators.cat_log_y_planks": "Cat Planks",
-      "item.minecraft_gators.cat_jesus_dust_armor_boots": "Cat Jesus Dust Boots",
       "block.minecraft_gators.compacted_cat_litter": "Compacted Cat Litter",
+      "item.minecraft_gators.cat_jesus_dust_armor_boots": "Cat Jesus Dust Boots",
       "item.minecraft_gators.betterite_armor_boots": "Betterite Boots",
       "block.minecraft_gators.cat_log_y_fence_gate": "Cat Fence Gate",
       "item.minecraft_gators.cat_jesus_dust_sword": "Cat Jesus Dust Sword",
@@ -1084,6 +1112,7 @@
       "block.minecraft_gators.cat_log_y_leaves": "Cat Leaves",
       "advancements.blessed.title": "Blessed",
       "block.minecraft_gators.infected_catalyst": "Infected Cat alyst",
+      "block.minecraft_gators.cat_dirt": "Cat Dirt",
       "item.minecraft.lingering_potion.effect.cat_nip": "Lingering Potion of Cat Nip",
       "item.minecraft.tipped_arrow.effect.cat_nip": "Arrow of Cat Nip",
       "block.minecraft_gators.cat_log_y_log": "Cat Log",
@@ -1120,6 +1149,7 @@
       "itemGroup.tabminecraftplus_gator": "Minecraft+ Gator",
       "item.minecraft_gators.rats.desc": "Rat -  Penelope Scott",
       "advancements.hiddenby_bedrock.descr": "Obtain a Ruby",
+      "item.minecraft_gators.disc.desc": "Rick Astley - Never Gonna Give You Up",
       "item.minecraft_gators.betterite_armor_leggings": "Betterite Leggings",
       "block.minecraft_gators.cat_alter_block": "Cat Alter ",
       "item.minecraft_gators.emerald_forged_armor_helmet": "Emerald Forged Helmet",
@@ -1132,6 +1162,7 @@
       "item.minecraft_gators.blazekingsblade": "Blaze King\u0027s Blade",
       "item.minecraft_gators.unrefined_cat_nip": "Unrefined Cat Nip",
       "item.minecraft_gators.betterite_hoe": "Betterite Hoe",
+      "biome.minecraft_gators.cat_food_hills": "Cat Food Hills",
       "item.minecraft_gators.emerald_forged_armor_leggings": "Emerald Forged Leggings",
       "item.minecraft.splash_potion.effect.cat_nip": "Splash Potion of Cat Nip",
       "item.minecraft_gators.cat_jesus_dust_axe": "Cat Jesus Dust Axe",
@@ -1145,6 +1176,7 @@
       "advancements.wherehaveyougone.descr": "Enter the Cat Food Plains",
       "advancements.cover_me_with_cash.descr": "Get emerald forged armor!",
       "biome.minecraft_gators.cat_food_plains": "Cat Food Plains",
+      "item.minecraft_gators.disc": "Disc",
       "item.minecraft_gators.betterite_shovel": "Betterite Shovel",
       "item.minecraft_gators.cat_jesus_dust_pickaxe": "Cat Jesus Dust Pickaxe",
       "item.minecraft_gators.cat_realms": "Cat Realms Portal Igniter",
