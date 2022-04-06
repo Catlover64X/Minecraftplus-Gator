@@ -93,7 +93,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "STANDARD",
+    "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
       "Ores",

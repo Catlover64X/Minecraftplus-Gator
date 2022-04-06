@@ -34,6 +34,10 @@ public class CatRealmsDimension {
 					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_food_plains")).getGenerationSettings()
 					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
+			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_food_hills")).getGenerationSettings()
+					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
+			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_food_hills")).getGenerationSettings()
+					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();

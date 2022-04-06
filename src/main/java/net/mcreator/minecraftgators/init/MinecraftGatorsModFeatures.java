@@ -21,6 +21,7 @@ import net.mcreator.minecraftgators.world.features.ores.Cat_Jesus_DustOreFeature
 import net.mcreator.minecraftgators.world.features.ores.CatNipPlantFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatLog_yLogFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatFoodBlockFeature;
+import net.mcreator.minecraftgators.world.features.ores.CatDirtFeature;
 
 import java.util.Set;
 import java.util.Map;
@@ -40,6 +41,8 @@ public class MinecraftGatorsModFeatures {
 				CatNipPlantFeature.GENERATE_BIOMES, CatNipPlantFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(Cat_Jesus_DustOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
 				Cat_Jesus_DustOreFeature.GENERATE_BIOMES, Cat_Jesus_DustOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CatDirtFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CatDirtFeature.GENERATE_BIOMES,
+				CatDirtFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
