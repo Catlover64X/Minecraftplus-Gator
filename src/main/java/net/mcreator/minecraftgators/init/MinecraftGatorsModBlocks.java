@@ -34,6 +34,7 @@ import net.mcreator.minecraftgators.block.CatLog_yFenceBlock;
 import net.mcreator.minecraftgators.block.CatLog_yButtonBlock;
 import net.mcreator.minecraftgators.block.CatLitterBlock;
 import net.mcreator.minecraftgators.block.CatFoodBlockBlock;
+import net.mcreator.minecraftgators.block.CatDirtBlock;
 import net.mcreator.minecraftgators.block.CatAlterBlockBlock;
 
 import java.util.List;
@@ -64,6 +65,7 @@ public class MinecraftGatorsModBlocks {
 	public static final Block INFECTED_CATALYST = register(new InfectedCatalystBlock());
 	public static final Block COMPRESSEDCATJESUSBLOCK = register(new CompressedcatjesusblockBlock());
 	public static final Block CAT_REALMS_PORTAL = register(new CatRealmsPortalBlock());
+	public static final Block CAT_DIRT = register(new CatDirtBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

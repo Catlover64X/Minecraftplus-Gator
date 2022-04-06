@@ -1028,6 +1028,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "storm_follower"
+    },
+    {
+      "name": "CatFoodHills",
+      "type": "biome",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_food_hills"
+    },
+    {
+      "name": "CatDirt",
+      "type": "block",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_dirt"
     }
   ],
   "variable_elements": [],
@@ -1051,6 +1067,7 @@
       "block.minecraft_gators.cat_log_y_leaves": "Cat Leaves",
       "advancements.blessed.title": "Blessed",
       "block.minecraft_gators.infected_catalyst": "Infected Cat alyst",
+      "block.minecraft_gators.cat_dirt": "Cat Dirt",
       "item.minecraft.lingering_potion.effect.cat_nip": "Lingering Potion of Cat Nip",
       "item.minecraft.tipped_arrow.effect.cat_nip": "Arrow of Cat Nip",
       "block.minecraft_gators.cat_log_y_log": "Cat Log",
@@ -1098,6 +1115,7 @@
       "item.minecraft_gators.blazekingsblade": "Blaze King\u0027s Blade",
       "item.minecraft_gators.unrefined_cat_nip": "Unrefined Cat Nip",
       "item.minecraft_gators.betterite_hoe": "Betterite Hoe",
+      "biome.minecraft_gators.cat_food_hills": "Cat Food Hills",
       "item.minecraft_gators.emerald_forged_armor_leggings": "Emerald Forged Leggings",
       "item.minecraft.splash_potion.effect.cat_nip": "Splash Potion of Cat Nip",
       "item.minecraft_gators.cat_jesus_dust_axe": "Cat Jesus Dust Axe",

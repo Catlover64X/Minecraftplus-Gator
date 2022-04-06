@@ -109,6 +109,7 @@ public class MinecraftGatorsModItems {
 	public static final Item CAT_REALMS = register(new CatRealmsItem());
 	public static final Item STORM_FOLLOWER = register(new SpawnEggItem(MinecraftGatorsModEntities.STORM_FOLLOWER, -16777063, -16777216,
 			new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR)).setRegistryName("storm_follower_spawn_egg"));
+	public static final Item CAT_DIRT = register(MinecraftGatorsModBlocks.CAT_DIRT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -13,6 +13,7 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.minecraftgators.world.biome.CatFoodPlainsBiome;
+import net.mcreator.minecraftgators.world.biome.CatFoodHillsBiome;
 import net.mcreator.minecraftgators.MinecraftGatorsMod;
 
 import java.util.List;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 public class MinecraftGatorsModBiomes {
 	private static final List<Biome> REGISTRY = new ArrayList<>();
 	public static Biome CAT_FOOD_PLAINS = register("cat_food_plains", CatFoodPlainsBiome.createBiome());
+	public static Biome CAT_FOOD_HILLS = register("cat_food_hills", CatFoodHillsBiome.createBiome());
 
 	private static Biome register(String registryname, Biome biome) {
 		REGISTRY.add(biome.setRegistryName(new ResourceLocation(MinecraftGatorsMod.MODID, registryname)));
@@ -37,6 +39,7 @@ public class MinecraftGatorsModBiomes {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			CatFoodPlainsBiome.init();
+			CatFoodHillsBiome.init();
 		});
 	}
 }
