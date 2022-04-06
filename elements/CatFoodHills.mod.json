@@ -46,9 +46,7 @@
     "biomeType": "WARM",
     "spawnBiome": false,
     "biomeWeight": 10,
-    "biomeDictionaryTypes": [
-      "HILLS"
-    ],
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 2,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
