@@ -1052,6 +1052,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc"
+    },
+    {
+      "name": "DiscRightClickedInAir",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1088,7 +1116,7 @@
       "item.minecraft.lingering_potion.effect.cat_nip": "Lingering Potion of Cat Nip",
       "item.minecraft.tipped_arrow.effect.cat_nip": "Arrow of Cat Nip",
       "block.minecraft_gators.cat_log_y_log": "Cat Log",
-      "item.minecraft_gators.rats": "Disc 15",
+      "item.minecraft_gators.rats": "Rats",
       "item.minecraft_gators.cat_jesus_dust_shovel": "Cat Jesus Dust Shovel",
       "block.minecraft_gators.cat_log_y_stairs": "Cat Stairs",
       "advancements.new_realms.descr": "Enter the Cat Realms",
@@ -1121,7 +1149,7 @@
       "itemGroup.tabminecraftplus_gator": "Minecraft+ Gator",
       "item.minecraft_gators.rats.desc": "Rat -  Penelope Scott",
       "advancements.hiddenby_bedrock.descr": "Obtain a Ruby",
-      "item.minecraft_gators.disc.desc": "Never going to give you up - Rick Astley",
+      "item.minecraft_gators.disc.desc": "Rick Astley - Never Gonna Give You Up",
       "item.minecraft_gators.betterite_armor_leggings": "Betterite Leggings",
       "block.minecraft_gators.cat_alter_block": "Cat Alter ",
       "item.minecraft_gators.emerald_forged_armor_helmet": "Emerald Forged Helmet",
@@ -1148,7 +1176,7 @@
       "advancements.wherehaveyougone.descr": "Enter the Cat Food Plains",
       "advancements.cover_me_with_cash.descr": "Get emerald forged armor!",
       "biome.minecraft_gators.cat_food_plains": "Cat Food Plains",
-      "item.minecraft_gators.disc": "Disc 14",
+      "item.minecraft_gators.disc": "Disc",
       "item.minecraft_gators.betterite_shovel": "Betterite Shovel",
       "item.minecraft_gators.cat_jesus_dust_pickaxe": "Cat Jesus Dust Pickaxe",
       "item.minecraft_gators.cat_realms": "Cat Realms Portal Igniter",
