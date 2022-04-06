@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft_gators:block/cat_log_y_slab"
+    },
+    "type=top": {
+      "model": "minecraft_gators:block/cat_log_y_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft_gators:block/cat_log_y_slab_full"
+    }
+  }
+}

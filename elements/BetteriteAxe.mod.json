@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "betterite_axe",
+    "customModelName": "Normal",
+    "name": "Betterite Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 4,
+    "efficiency": 9.0,
+    "attackSpeed": 1.0,
+    "enchantability": 25,
+    "damageVsEntity": 16.0,
+    "usageCount": 2789,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BetteriteIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

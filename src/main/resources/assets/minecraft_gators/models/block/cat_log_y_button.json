@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "minecraft_gators:blocks/catlog_y_planks"
+  }
+}

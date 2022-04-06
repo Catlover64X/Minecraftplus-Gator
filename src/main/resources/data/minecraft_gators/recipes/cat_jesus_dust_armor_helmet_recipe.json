@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft_gators:betterite_armor_helmet"
+  },
+  "addition": {
+    "item": "minecraft_gators:cat_jesus_dust_block"
+  },
+  "result": {
+    "item": "minecraft_gators:cat_jesus_dust_armor_helmet"
+  }
+}

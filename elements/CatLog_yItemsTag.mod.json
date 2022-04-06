@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CatLog_yWood"
+      },
+      {
+        "value": "CUSTOM:CatLog_yLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "catlog_y_log",
+    "namespace": "forge"
+  }
+}

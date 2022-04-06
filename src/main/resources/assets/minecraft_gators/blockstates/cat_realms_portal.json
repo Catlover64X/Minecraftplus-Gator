@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "minecraft_gators:block/cat_realms_portal_ew"
+    },
+    "axis=x": {
+      "model": "minecraft_gators:block/cat_realms_portal_ns"
+    }
+  }
+}

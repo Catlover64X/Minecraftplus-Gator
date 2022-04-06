@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "catniptexture",
+    "customModelName": "Normal",
+    "name": "Cooked Cat Nip",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 4.0,
+    "eatingSpeed": 80,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "CookedCatNipEaten"
+    }
+  }
+}

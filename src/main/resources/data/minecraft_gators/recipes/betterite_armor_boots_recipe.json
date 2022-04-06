@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_gators:betterite_ingot"
+    },
+    "2": {
+      "item": "minecraft_gators:betterite_ingot"
+    },
+    "3": {
+      "item": "minecraft_gators:betterite_ingot"
+    },
+    "5": {
+      "item": "minecraft_gators:betterite_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_gators:betterite_armor_boots",
+    "count": 1
+  }
+}

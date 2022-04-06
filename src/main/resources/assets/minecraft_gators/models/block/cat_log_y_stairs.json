@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "minecraft_gators:blocks/catlog_y_planks",
+    "top": "minecraft_gators:blocks/catlog_y_planks",
+    "side": "minecraft_gators:blocks/catlog_y_planks"
+  }
+}

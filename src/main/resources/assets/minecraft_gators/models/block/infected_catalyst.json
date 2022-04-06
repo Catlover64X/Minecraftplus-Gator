@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_gators:blocks/pitchblack",
+    "up": "minecraft_gators:blocks/pitchblack",
+    "north": "minecraft_gators:blocks/faceuwuspooky",
+    "east": "minecraft_gators:blocks/pitchblack",
+    "south": "minecraft_gators:blocks/pitchblack",
+    "west": "minecraft_gators:blocks/pitchblack",
+    "particle": "minecraft_gators:blocks/pitchblack"
+  }
+}

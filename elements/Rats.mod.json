@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "rats_disc",
+    "name": "Rats",
+    "description": "Rat -  Penelope Scott",
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "music": {
+      "value": "ambient.cave"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_gators:ruby"
+    },
+    "1": {
+      "item": "minecraft_gators:ruby"
+    },
+    "2": {
+      "item": "minecraft_gators:ruby"
+    },
+    "3": {
+      "item": "minecraft_gators:ruby"
+    },
+    "4": {
+      "item": "minecraft_gators:ruby"
+    },
+    "5": {
+      "item": "minecraft_gators:ruby"
+    },
+    "6": {
+      "item": "minecraft_gators:ruby"
+    },
+    "7": {
+      "item": "minecraft_gators:ruby"
+    },
+    "8": {
+      "item": "minecraft_gators:ruby"
+    }
+  },
+  "result": {
+    "item": "minecraft_gators:ruby_block",
+    "count": 1
+  }
+}

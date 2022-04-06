@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_gators:compressedcatjesusblock"
+    },
+    "1": {
+      "item": "minecraft:emerald_block"
+    },
+    "2": {
+      "item": "minecraft_gators:compressedcatjesusblock"
+    },
+    "3": {
+      "item": "minecraft:diamond_block"
+    },
+    "4": {
+      "item": "minecraft_gators:litter_box"
+    },
+    "5": {
+      "item": "minecraft:iron_block"
+    },
+    "6": {
+      "item": "minecraft_gators:compressedcatjesusblock"
+    },
+    "7": {
+      "item": "minecraft:netherite_block"
+    },
+    "8": {
+      "item": "minecraft_gators:compressedcatjesusblock"
+    }
+  },
+  "result": {
+    "item": "minecraft_gators:cat_gun",
+    "count": 1
+  }
+}

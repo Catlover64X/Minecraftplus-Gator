@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "minecraft_gators:block/cat_log_y_pressure_plate"
+    },
+    "powered=true": {
+      "model": "minecraft_gators:block/cat_log_y_pressure_plate_down"
+    }
+  }
+}

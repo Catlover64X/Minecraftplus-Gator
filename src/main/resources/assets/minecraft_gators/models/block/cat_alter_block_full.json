@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft_gators:blocks/catlitter",
+    "top": "minecraft_gators:blocks/topofcatalter",
+    "side": "minecraft_gators:blocks/dustblock"
+  }
+}

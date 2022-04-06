@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "cat_jesus_dust_hoe",
+    "customModelName": "Normal",
+    "name": "Cat Jesus Dust Hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 8,
+    "efficiency": 14.0,
+    "attackSpeed": 1.0,
+    "enchantability": 55,
+    "damageVsEntity": 8.0,
+    "usageCount": 1680,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

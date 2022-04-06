@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_gators:cat_log_y_planks"
+    }
+  ],
+  "result": {
+    "item": "minecraft_gators:cat_log_y_button",
+    "count": 1
+  }
+}

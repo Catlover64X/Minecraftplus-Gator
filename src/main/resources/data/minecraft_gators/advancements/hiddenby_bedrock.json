@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hiddenby_bedrock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft_gators:ruby"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft_gators:minecraftplus_gator_2"
+}

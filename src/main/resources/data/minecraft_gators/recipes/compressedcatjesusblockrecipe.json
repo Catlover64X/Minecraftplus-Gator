@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_gators:cat_jesus_dust_block"
+    },
+    "1": {
+      "item": "minecraft_gators:cat_jesus_dust_block"
+    },
+    "2": {
+      "item": "minecraft_gators:cat_jesus_dust_block"
+    },
+    "3": {
+      "item": "minecraft_gators:cat_jesus_dust_block"
+    }
+  },
+  "result": {
+    "item": "minecraft_gators:compressedcatjesusblock",
+    "count": 1
+  }
+}

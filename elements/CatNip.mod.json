@@ -1,0 +1,30 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Cat Nip",
+    "splashName": "Splash Potion of Cat Nip",
+    "lingeringName": "Lingering Potion of Cat Nip",
+    "arrowName": "Arrow of Cat Nip",
+    "effects": [
+      {
+        "effect": {
+          "value": "NAUSEA"
+        },
+        "duration": 2000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "SPEED"
+        },
+        "duration": 3600,
+        "amplifier": 5,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

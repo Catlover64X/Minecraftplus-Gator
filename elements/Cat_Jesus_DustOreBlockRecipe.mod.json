@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Cat_Jesus_DustBlock"
+    },
+    "name": "cat_jesus_dust_ore_block_recipe",
+    "namespace": "mod"
+  }
+}

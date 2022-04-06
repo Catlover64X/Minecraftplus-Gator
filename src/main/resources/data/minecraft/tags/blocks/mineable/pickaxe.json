@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_gators:ruby_ore",
+    "minecraft_gators:ruby_block",
+    "minecraft_gators:cat_jesus_dust_ore",
+    "minecraft_gators:cat_jesus_dust_block"
+  ]
+}

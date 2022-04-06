@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft_gators:cat_alter_block"
+    },
+    "title": {
+      "translate": "advancements.blessed.title"
+    },
+    "description": {
+      "translate": "advancements.blessed.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blessed": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft_gators:just_why"
+}

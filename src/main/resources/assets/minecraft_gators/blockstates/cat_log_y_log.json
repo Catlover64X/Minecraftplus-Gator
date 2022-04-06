@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minecraft_gators:block/cat_log_y_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "minecraft_gators:block/cat_log_y_log"
+    },
+    "axis=z": {
+      "model": "minecraft_gators:block/cat_log_y_log",
+      "x": 90
+    }
+  }
+}

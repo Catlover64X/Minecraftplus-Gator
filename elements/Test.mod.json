@@ -1,0 +1,34 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "blazekingsblade",
+    "customModelName": "Normal",
+    "name": "Blaze King's Blade",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 20,
+    "damageVsEntity": 10.0,
+    "usageCount": 1969,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.BLAZE_ROD"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "LightonFire"
+    }
+  }
+}

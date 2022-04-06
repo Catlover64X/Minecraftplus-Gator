@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "minecraft_gators:blocks/catlog_y_planks"
+  }
+}

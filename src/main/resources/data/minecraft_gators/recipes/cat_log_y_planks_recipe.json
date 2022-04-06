@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:catlog_y_log"
+    }
+  ],
+  "result": {
+    "item": "minecraft_gators:cat_log_y_planks",
+    "count": 4
+  }
+}

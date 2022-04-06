@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "minecraft_gators:items/cat_jesus_dust_sword"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft_gators:emerald_forged_armor_helmet"
+    },
+    "title": {
+      "translate": "advancements.cover_me_with_cash.title"
+    },
+    "description": {
+      "translate": "advancements.cover_me_with_cash.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "cover_me_with_cash": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft_gators:emerald_forged_armor_helmet"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "minecraft_gators:minecraftplus_gator_2"
+}

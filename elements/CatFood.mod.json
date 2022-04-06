@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cat_food",
+    "customModelName": "Normal",
+    "name": "Cat Food",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 6,
+    "saturation": 2.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "Items.BOWL"
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

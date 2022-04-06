@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_gators:betterite_ingot"
+    },
+    "1": {
+      "item": "minecraft_gators:blazekingsblade"
+    },
+    "2": {
+      "item": "minecraft_gators:betterite_ingot"
+    },
+    "3": {
+      "item": "minecraft_gators:cat_log_y_planks"
+    },
+    "4": {
+      "item": "minecraft_gators:compacted_cat_litter"
+    },
+    "5": {
+      "item": "minecraft_gators:cat_log_y_planks"
+    },
+    "6": {
+      "item": "minecraft_gators:cat_log_y_planks"
+    },
+    "7": {
+      "item": "minecraft_gators:cat_log_y_planks"
+    },
+    "8": {
+      "item": "minecraft_gators:cat_log_y_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft_gators:litter_box",
+    "count": 1
+  }
+}

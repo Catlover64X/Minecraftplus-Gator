@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft_gators:blocks/catlog_y_leaves",
+    "particle": "minecraft_gators:blocks/catlog_y_leaves"
+  }
+}

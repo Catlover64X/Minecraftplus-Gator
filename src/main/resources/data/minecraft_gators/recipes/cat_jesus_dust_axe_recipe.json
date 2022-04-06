@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft_gators:betterite_axe"
+  },
+  "addition": {
+    "item": "minecraft_gators:cat_jesus_dust_dust"
+  },
+  "result": {
+    "item": "minecraft_gators:cat_jesus_dust_axe"
+  }
+}

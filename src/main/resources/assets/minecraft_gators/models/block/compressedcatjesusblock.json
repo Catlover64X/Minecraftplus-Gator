@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_gators:blocks/compressedcatjesusblock6969",
+    "up": "minecraft_gators:blocks/compressedcatjesusblock6969",
+    "north": "minecraft_gators:blocks/compressedcatjesusblock6969",
+    "east": "minecraft_gators:blocks/compressedcatjesusblock6969",
+    "south": "minecraft_gators:blocks/compressedcatjesusblock6969",
+    "west": "minecraft_gators:blocks/compressedcatjesusblock6969",
+    "particle": "minecraft_gators:blocks/compressedcatjesusblock6969"
+  }
+}

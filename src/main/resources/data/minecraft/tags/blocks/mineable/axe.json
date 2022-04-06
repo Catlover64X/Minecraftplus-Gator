@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_gators:cat_log_y_log",
+    "minecraft_gators:cat_log_y_planks",
+    "minecraft_gators:cat_alter_block"
+  ]
+}

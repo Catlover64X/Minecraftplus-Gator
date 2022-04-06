@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "minecraft_gators:blocks/catlog_y_planks",
+    "particle": "minecraft_gators:blocks/catlog_y_planks"
+  }
+}

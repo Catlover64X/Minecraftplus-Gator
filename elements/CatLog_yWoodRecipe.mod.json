@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CatLog_yLog"
+      },
+      {
+        "value": "CUSTOM:CatLog_yLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CatLog_yLog"
+      },
+      {
+        "value": "CUSTOM:CatLog_yLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CatLog_yWood"
+    },
+    "name": "cat_log_y_wood_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_gators:blocks/dustblock",
+    "up": "minecraft_gators:blocks/dustblock",
+    "north": "minecraft_gators:blocks/dustblock",
+    "east": "minecraft_gators:blocks/dustblock",
+    "south": "minecraft_gators:blocks/dustblock",
+    "west": "minecraft_gators:blocks/dustblock",
+    "particle": "minecraft_gators:blocks/dustblock"
+  }
+}

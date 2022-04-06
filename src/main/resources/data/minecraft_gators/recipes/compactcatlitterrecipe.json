@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "1": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "2": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "3": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "4": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "5": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "6": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "7": {
+      "item": "minecraft_gators:cat_litter"
+    },
+    "8": {
+      "item": "minecraft_gators:cat_litter"
+    }
+  },
+  "result": {
+    "item": "minecraft_gators:compacted_cat_litter",
+    "count": 1
+  }
+}
