@@ -3,8 +3,8 @@
   "_type": "musicdisc",
   "definition": {
     "texture": "disc_texture",
-    "name": "Disc 14",
-    "description": "Never going to give you up - Rick Astley",
+    "name": "Music Disc",
+    "description": "Rick Astley - Never going to give you up ",
     "creativeTab": {
       "value": "CUSTOM:MinecraftplusGator"
     },

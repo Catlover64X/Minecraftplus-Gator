@@ -3,8 +3,8 @@
   "_type": "musicdisc",
   "definition": {
     "texture": "rats_disc",
-    "name": "Disc 15",
-    "description": "Rat -  Penelope Scott",
+    "name": "Music Disc",
+    "description": "Penelope Scott - Rat",
     "creativeTab": {
       "value": "CUSTOM:MinecraftplusGator"
     },
