@@ -21,6 +21,7 @@ import net.mcreator.minecraftgators.item.RatsItem;
 import net.mcreator.minecraftgators.item.LitterBoxItem;
 import net.mcreator.minecraftgators.item.Emerald_ForgedArmorItem;
 import net.mcreator.minecraftgators.item.DiscItem;
+import net.mcreator.minecraftgators.item.CookedRottenFleshItem;
 import net.mcreator.minecraftgators.item.Cat_Jesus_DustSwordItem;
 import net.mcreator.minecraftgators.item.Cat_Jesus_DustShovelItem;
 import net.mcreator.minecraftgators.item.Cat_Jesus_DustPickaxeItem;
@@ -112,6 +113,7 @@ public class MinecraftGatorsModItems {
 			new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR)).setRegistryName("storm_follower_spawn_egg"));
 	public static final Item DISC = register(new DiscItem());
 	public static final Item CAT_DIRT = register(MinecraftGatorsModBlocks.CAT_DIRT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
+	public static final Item COOKED_ROTTEN_FLESH = register(new CookedRottenFleshItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

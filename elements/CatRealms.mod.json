@@ -28,6 +28,9 @@
     "sleepResult": "DENY",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "CatRealmsPortalTriggerUsed"
+    },
     "portalFrame": {
       "value": "CUSTOM:CompactedCatLitter"
     },
@@ -44,9 +47,6 @@
     },
     "texture": "portallightyeahhhhhhuwunameouttaideas",
     "portalTexture": "staticcatalyst",
-    "enablePortal": true,
-    "whenPortaTriggerlUsed": {
-      "name": "CatRealmsPortalTriggerUsed"
-    }
+    "enablePortal": true
   }
 }

@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "Items.ROTTEN_FLESH"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:CookedRottenFlesh"
+    },
+    "name": "cooked_rotting_flesh_recipe",
+    "namespace": "mod"
+  }
+}

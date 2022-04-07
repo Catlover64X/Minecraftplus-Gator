@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cookedrottenflesh",
+    "customModelName": "Normal",
+    "name": "Cooked Rotten Flesh",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 2,
+    "saturation": 1.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

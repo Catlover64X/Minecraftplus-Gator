@@ -9,7 +9,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftgators.procedures.CatRealmsPortalTriggerUsedProcedure;
 import net.mcreator.minecraftgators.init.MinecraftGatorsModTabs;
 import net.mcreator.minecraftgators.block.CatRealmsPortalBlock;
 
@@ -37,9 +36,7 @@ public class CatRealmsItem extends Item {
 				itemstack.hurtAndBreak(1, entity, c -> c.broadcastBreakEvent(context.getHand()));
 				success = true;
 			}
-
-			CatRealmsPortalTriggerUsedProcedure.execute(entity);
-			return InteractionResult.SUCCESS;
+			return success ? InteractionResult.SUCCESS : InteractionResult.FAIL;
 		}
 	}
 }
