@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft_gators:cat_jesus_dust_block",
+    "minecraft_gators:compressedcatjesusblock",
     "minecraft_gators:ruby_block"
   ]
 }

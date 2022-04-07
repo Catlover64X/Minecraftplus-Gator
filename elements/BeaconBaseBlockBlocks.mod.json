@@ -7,6 +7,12 @@
     "blocks": [
       {
         "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustBlock"
+      },
+      {
+        "value": "CUSTOM:Compressedcatjesusblock"
       }
     ],
     "functions": [],
