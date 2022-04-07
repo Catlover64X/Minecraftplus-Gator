@@ -9,7 +9,7 @@
       "value": "CUSTOM:MinecraftplusGator"
     },
     "music": {
-      "value": "ambient.cave"
+      "value": "CUSTOM:rat_disc_sound"
     },
     "specialInfo": [],
     "hasGlow": false

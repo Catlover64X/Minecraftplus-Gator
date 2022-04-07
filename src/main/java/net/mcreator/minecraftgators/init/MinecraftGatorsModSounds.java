@@ -19,6 +19,8 @@ public class MinecraftGatorsModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
 		REGISTRY.put(new ResourceLocation("minecraft_gators", "disc_sound"), new SoundEvent(new ResourceLocation("minecraft_gators", "disc_sound")));
+		REGISTRY.put(new ResourceLocation("minecraft_gators", "rat_disc_sound"),
+				new SoundEvent(new ResourceLocation("minecraft_gators", "rat_disc_sound")));
 	}
 
 	@SubscribeEvent
