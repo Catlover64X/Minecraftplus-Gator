@@ -1095,14 +1095,6 @@
       ],
       "category": "neutral",
       "subtitle": ""
-    },
-    {
-      "name": "rat_disc_sound",
-      "files": [
-        "naijacrawl-music-penelope-scott-rat"
-      ],
-      "category": "neutral",
-      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1176,7 +1168,6 @@
       "item.minecraft_gators.betterite_hoe": "Betterite Hoe",
       "biome.minecraft_gators.cat_food_hills": "Cat Food Hills",
       "item.minecraft_gators.emerald_forged_armor_leggings": "Emerald Forged Leggings",
-      "subtitles.rat_disc_sound": "",
       "item.minecraft.splash_potion.effect.cat_nip": "Splash Potion of Cat Nip",
       "item.minecraft_gators.cat_jesus_dust_axe": "Cat Jesus Dust Axe",
       "block.minecraft_gators.ruby_ore": "Ruby Ore",
