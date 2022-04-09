@@ -23,7 +23,7 @@
     "animation": "crossbow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 6.0,
+    "bulletPower": 1.0,
     "bulletDamage": 9.0,
     "bulletKnockback": 9,
     "bulletParticles": true,
@@ -31,7 +31,7 @@
     "bulletItemTexture": {
       "value": "Items.IRON_NUGGET"
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "bulletModel": "Modelcustom_model",
+    "customBulletModelTexture": "nyancat.png"
   }
 }

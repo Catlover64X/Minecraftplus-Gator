@@ -45,7 +45,7 @@ public class CatGunItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				CatGunEntity entityarrow = CatGunEntity.shoot(world, entity, world.getRandom(), 6f, 9, 9);
+				CatGunEntity entityarrow = CatGunEntity.shoot(world, entity, world.getRandom(), 1f, 9, 9);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 			}

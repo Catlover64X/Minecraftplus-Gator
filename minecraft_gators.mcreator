@@ -927,14 +927,6 @@
       "registry_name": "infected_catalyst"
     },
     {
-      "name": "CatGun",
-      "type": "rangeditem",
-      "sortid": 101,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cat_gun"
-    },
-    {
       "name": "Compressedcatjesusblock",
       "type": "block",
       "sortid": 102,
@@ -1084,6 +1076,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooked_rotting_flesh_recipe"
+    },
+    {
+      "name": "CatGun",
+      "type": "rangeditem",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_gun"
     }
   ],
   "variable_elements": [],
@@ -1111,8 +1111,8 @@
       "advancements.blessed.descr": "Use the Cat Alter",
       "entity.minecraft_gators.blaze_king": "Blaze King",
       "block.minecraft_gators.cat_log_y_planks": "Cat Planks",
-      "item.minecraft_gators.cat_jesus_dust_armor_boots": "Cat Jesus Dust Boots",
       "block.minecraft_gators.compacted_cat_litter": "Compacted Cat Litter",
+      "item.minecraft_gators.cat_jesus_dust_armor_boots": "Cat Jesus Dust Boots",
       "item.minecraft_gators.betterite_armor_boots": "Betterite Boots",
       "block.minecraft_gators.cat_log_y_fence_gate": "Cat Fence Gate",
       "item.minecraft_gators.cat_jesus_dust_sword": "Cat Jesus Dust Sword",
@@ -1215,6 +1215,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.minecraftgators",
     "lockBaseModFiles": false
   },
