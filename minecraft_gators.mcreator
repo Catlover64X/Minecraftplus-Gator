@@ -1092,6 +1092,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cat_desert"
+    },
+    {
+      "name": "CatJesusBloodRecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_jesus_blood_recipe"
+    },
+    {
+      "name": "CatJesussBlood",
+      "type": "potion",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_jesuss_blood"
     }
   ],
   "variable_elements": [],
@@ -1152,7 +1168,6 @@
       "block.minecraft_gators.cat_jesus_dust_ore": "Cat Jesus Dust Ore",
       "block.minecraft_gators.cat_log_y_button": "Cat Button",
       "item.minecraft_gators.blaze_king_spawn_egg": "Blaze King Spawn Egg",
-      "biome.minecraft_gators.cat_desert": "Cat Desert",
       "item.minecraft_gators.cat_food": "Cat Food",
       "item.minecraft_gators.betterite_pickaxe": "Betterite Pickaxe",
       "advancements.minecraftplus_gator_2.descr": "Install the Minecraft+ Gator Mod!",

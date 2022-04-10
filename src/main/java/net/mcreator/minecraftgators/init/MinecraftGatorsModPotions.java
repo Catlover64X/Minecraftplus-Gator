@@ -20,6 +20,9 @@ public class MinecraftGatorsModPotions {
 	private static final List<Potion> REGISTRY = new ArrayList<>();
 	public static final Potion CAT_NIP = register(new Potion(new MobEffectInstance(MobEffects.CONFUSION, 2000, 0, false, true),
 			new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 5, false, true)).setRegistryName("cat_nip"));
+	public static final Potion CAT_JESUSS_BLOOD = register(new Potion(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 2, false, true),
+			new MobEffectInstance(MobEffects.DIG_SPEED, 3600, 2, false, true), new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3600, 2, false, true))
+					.setRegistryName("cat_jesuss_blood"));
 
 	private static Potion register(Potion potion) {
 		REGISTRY.add(potion);
