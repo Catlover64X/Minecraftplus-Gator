@@ -1097,7 +1097,7 @@
       "name": "CatJesusBloodRecipe",
       "type": "recipe",
       "sortid": 114,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cat_jesus_blood_recipe"
     },
