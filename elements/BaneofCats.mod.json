@@ -21,6 +21,6 @@
     "isCurse": false,
     "isAllowedOnBooks": true,
     "canGenerateInLootTables": true,
-    "canVillagerTrade": false
+    "canVillagerTrade": true
   }
 }
