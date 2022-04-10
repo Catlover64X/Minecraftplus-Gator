@@ -1108,6 +1108,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cat_jesuss_blood"
+    },
+    {
+      "name": "CatShit",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_shit"
     }
   ],
   "variable_elements": [],
@@ -1127,8 +1135,8 @@
       "advancements.blessed.descr": "Use the Cat Alter",
       "entity.minecraft_gators.blaze_king": "Blaze King",
       "block.minecraft_gators.cat_log_y_planks": "Cat Planks",
-      "block.minecraft_gators.compacted_cat_litter": "Compacted Cat Litter",
       "item.minecraft_gators.cat_jesus_dust_armor_boots": "Cat Jesus Dust Boots",
+      "block.minecraft_gators.compacted_cat_litter": "Compacted Cat Litter",
       "item.minecraft_gators.betterite_armor_boots": "Betterite Boots",
       "block.minecraft_gators.cat_log_y_fence_gate": "Cat Fence Gate",
       "item.minecraft_gators.cat_jesus_dust_sword": "Cat Jesus Dust Sword",
@@ -1186,6 +1194,7 @@
       "item.minecraft_gators.betterite_sword": "Betterite Sword",
       "block.minecraft_gators.cat_log_y_fence": "Cat Fence",
       "advancements.outof_fire.descr": "Slay the Blaze King",
+      "block.minecraft_gators.cat_shit": "Cat Shit",
       "item.minecraft_gators.cat_jesus_dust_armor_leggings": "Cat Jesus Dust Leggings",
       "item.minecraft_gators.emerald_forged_armor_chestplate": "Emerald Forged Chestplate",
       "item.minecraft_gators.blazekingsblade": "Blaze King\u0027s Blade",

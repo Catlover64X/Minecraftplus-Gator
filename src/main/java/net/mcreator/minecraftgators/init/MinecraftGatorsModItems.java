@@ -114,6 +114,7 @@ public class MinecraftGatorsModItems {
 	public static final Item CAT_DIRT = register(MinecraftGatorsModBlocks.CAT_DIRT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final Item COOKED_ROTTEN_FLESH = register(new CookedRottenFleshItem());
 	public static final Item CAT_GUN = register(new CatGunItem());
+	public static final Item CAT_SHIT = register(MinecraftGatorsModBlocks.CAT_SHIT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

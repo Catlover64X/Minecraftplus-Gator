@@ -18,6 +18,7 @@ import net.minecraft.core.Registry;
 
 import net.mcreator.minecraftgators.world.features.ores.RubyOreFeature;
 import net.mcreator.minecraftgators.world.features.ores.Cat_Jesus_DustOreFeature;
+import net.mcreator.minecraftgators.world.features.ores.CatShitFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatNipPlantFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatLog_yLogFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatFoodBlockFeature;
@@ -46,6 +47,8 @@ public class MinecraftGatorsModFeatures {
 				CatDirtFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(StrangetempleFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				StrangetempleFeature.GENERATE_BIOMES, StrangetempleFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CatShitFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CatShitFeature.GENERATE_BIOMES,
+				CatShitFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
