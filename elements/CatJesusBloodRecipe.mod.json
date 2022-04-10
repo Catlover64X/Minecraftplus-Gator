@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:CUSTOM:CatNip"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:Cat_Jesus_DustDust"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:CatJesussBlood"
+    },
+    "name": "cat_jesus_blood_recipe",
+    "namespace": "mod"
+  }
+}
