@@ -51,7 +51,7 @@ public class Cat_Jesus_DustSwordItem extends SwordItem {
 		double z = entity.getZ();
 		Level world = entity.level;
 
-		BaneofCatsEnchantmentEffectProcedure.execute();
+		BaneofCatsEnchantmentEffectProcedure.execute(entity, sourceentity, itemstack);
 		return retval;
 	}
 }

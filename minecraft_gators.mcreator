@@ -1125,7 +1125,20 @@
       "locked_code": false,
       "registry_name": "baneof_cats_enchantment_effect",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
       }
     }
   ],
