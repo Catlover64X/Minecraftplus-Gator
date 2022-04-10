@@ -31,12 +31,12 @@ public class MinecraftGatorsModEntities {
 	public static final EntityType<BlazeKingEntityProjectile> BLAZE_KING_PROJECTILE = register("entitybulletblaze_king",
 			EntityType.Builder.<BlazeKingEntityProjectile>of(BlazeKingEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(BlazeKingEntityProjectile::new).sized(0.5f, 0.5f));
-	public static final EntityType<StormFollowerEntity> STORM_FOLLOWER = register("storm_follower",
-			EntityType.Builder.<StormFollowerEntity>of(StormFollowerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(999).setUpdateInterval(3).setCustomClientFactory(StormFollowerEntity::new).sized(0.6f, 1.8f));
 	public static final EntityType<CatGunEntity> CAT_GUN = register("entitybulletcat_gun",
 			EntityType.Builder.<CatGunEntity>of(CatGunEntity::new, MobCategory.MISC).setCustomClientFactory(CatGunEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<StormFollowerEntity> STORM_FOLLOWER = register("storm_follower",
+			EntityType.Builder.<StormFollowerEntity>of(StormFollowerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(999).setUpdateInterval(3).setCustomClientFactory(StormFollowerEntity::new).sized(0.6f, 1.8f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);

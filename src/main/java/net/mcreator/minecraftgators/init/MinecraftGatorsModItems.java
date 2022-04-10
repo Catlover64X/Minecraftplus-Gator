@@ -105,6 +105,7 @@ public class MinecraftGatorsModItems {
 	public static final Item CAT_JESUS_DUST_ARMOR_LEGGINGS = register(new Cat_Jesus_DustArmorItem.Leggings());
 	public static final Item CAT_JESUS_DUST_ARMOR_BOOTS = register(new Cat_Jesus_DustArmorItem.Boots());
 	public static final Item INFECTED_CATALYST = register(MinecraftGatorsModBlocks.INFECTED_CATALYST, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
+	public static final Item CAT_GUN = register(new CatGunItem());
 	public static final Item COMPRESSEDCATJESUSBLOCK = register(MinecraftGatorsModBlocks.COMPRESSEDCATJESUSBLOCK,
 			MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final Item CAT_REALMS = register(new CatRealmsItem());
@@ -113,7 +114,6 @@ public class MinecraftGatorsModItems {
 	public static final Item DISC = register(new DiscItem());
 	public static final Item CAT_DIRT = register(MinecraftGatorsModBlocks.CAT_DIRT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final Item COOKED_ROTTEN_FLESH = register(new CookedRottenFleshItem());
-	public static final Item CAT_GUN = register(new CatGunItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

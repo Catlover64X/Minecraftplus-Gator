@@ -21,7 +21,7 @@ public class MinecraftGatorsModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(MinecraftGatorsModEntities.BLAZE_KING, BlazeKingRenderer::new);
 		event.registerEntityRenderer(MinecraftGatorsModEntities.BLAZE_KING_PROJECTILE, ThrownItemRenderer::new);
-		event.registerEntityRenderer(MinecraftGatorsModEntities.STORM_FOLLOWER, StormFollowerRenderer::new);
 		event.registerEntityRenderer(MinecraftGatorsModEntities.CAT_GUN, CatGunRenderer::new);
+		event.registerEntityRenderer(MinecraftGatorsModEntities.STORM_FOLLOWER, StormFollowerRenderer::new);
 	}
 }
