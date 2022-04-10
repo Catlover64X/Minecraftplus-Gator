@@ -927,14 +927,6 @@
       "registry_name": "infected_catalyst"
     },
     {
-      "name": "CatGun",
-      "type": "rangeditem",
-      "sortid": 101,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cat_gun"
-    },
-    {
       "name": "Compressedcatjesusblock",
       "type": "block",
       "sortid": 102,
@@ -1086,12 +1078,20 @@
       "registry_name": "cooked_rotting_flesh_recipe"
     },
     {
-      "name": "CatJesussBlood",
-      "type": "potion",
+      "name": "CatGun",
+      "type": "rangeditem",
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cat_jesuss_blood"
+      "registry_name": "cat_gun"
+    },
+    {
+      "name": "CatDesert",
+      "type": "biome",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_desert"
     },
     {
       "name": "CatJesusBloodRecipe",
@@ -1102,20 +1102,20 @@
       "registry_name": "cat_jesus_blood_recipe"
     },
     {
+      "name": "CatJesussBlood",
+      "type": "potion",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_jesuss_blood"
+    },
+    {
       "name": "BaneofCats",
       "type": "enchantment",
       "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baneof_cats"
-    },
-    {
-      "name": "CatDesert",
-      "type": "biome",
-      "sortid": 114,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cat_desert"
     },
     {
       "name": "BaneofCatsEnchantmentEffect",
@@ -1140,6 +1140,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "CatShit",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_shit"
     }
   ],
   "variable_elements": [],
@@ -1197,7 +1205,6 @@
       "block.minecraft_gators.ruby_block": "Block of Ruby",
       "advancements.minecraftplus_gator_2.title": "Minecraft+ Gator",
       "advancements.just_why.descr": "Obtain Cat Litter",
-      "enchantment.minecraft_gators.baneof_cats": "Bane of Cats",
       "item.minecraft_gators.betterite_ingot": "Betterite Ingot",
       "advancements.hiddenby_bedrock.title": "Hidden by Bedrock",
       "item.minecraft_gators.litter_box": "Litter Box",
@@ -1268,6 +1275,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.minecraftgators",
     "lockBaseModFiles": false
   },

@@ -21,6 +21,7 @@ import net.mcreator.minecraftgators.block.CompressedcatjesusblockBlock;
 import net.mcreator.minecraftgators.block.CompactedCatLitterBlock;
 import net.mcreator.minecraftgators.block.Cat_Jesus_DustOreBlock;
 import net.mcreator.minecraftgators.block.Cat_Jesus_DustBlockBlock;
+import net.mcreator.minecraftgators.block.CatShitBlock;
 import net.mcreator.minecraftgators.block.CatRealmsPortalBlock;
 import net.mcreator.minecraftgators.block.CatNipPlantBlock;
 import net.mcreator.minecraftgators.block.CatLog_yStairsBlock;
@@ -66,6 +67,7 @@ public class MinecraftGatorsModBlocks {
 	public static final Block COMPRESSEDCATJESUSBLOCK = register(new CompressedcatjesusblockBlock());
 	public static final Block CAT_REALMS_PORTAL = register(new CatRealmsPortalBlock());
 	public static final Block CAT_DIRT = register(new CatDirtBlock());
+	public static final Block CAT_SHIT = register(new CatShitBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
