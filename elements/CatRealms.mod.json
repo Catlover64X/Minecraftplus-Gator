@@ -8,6 +8,9 @@
       },
       {
         "value": "CUSTOM:CatFoodHills"
+      },
+      {
+        "value": "CUSTOM:CatDesert"
       }
     ],
     "worldGenType": "Normal world gen",
