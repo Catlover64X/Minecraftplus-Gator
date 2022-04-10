@@ -9,7 +9,14 @@
     "maxLevel": 1,
     "damageModifier": 0,
     "compatibleEnchantments": [],
-    "compatibleItems": [],
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:BetteriteSword"
+      },
+      {
+        "value": "CUSTOM:Cat_Jesus_DustSword"
+      }
+    ],
     "isTreasureEnchantment": true,
     "isCurse": false,
     "isAllowedOnBooks": true,

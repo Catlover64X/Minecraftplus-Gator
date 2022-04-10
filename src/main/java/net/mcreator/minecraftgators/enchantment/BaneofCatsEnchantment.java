@@ -1,10 +1,25 @@
 
 package net.mcreator.minecraftgators.enchantment;
 
-public class BaneofCatsEnchantment extends Enchantment {
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.EquipmentSlot;
 
+import net.mcreator.minecraftgators.init.MinecraftGatorsModItems;
+
+public class BaneofCatsEnchantment extends Enchantment {
 	public BaneofCatsEnchantment(EquipmentSlot... slots) {
 		super(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, slots);
+	}
+
+	@Override
+	public boolean canApplyAtEnchantingTable(ItemStack stack) {
+		if (stack.getItem() == MinecraftGatorsModItems.BETTERITE_SWORD)
+			return true;
+		if (stack.getItem() == MinecraftGatorsModItems.CAT_JESUS_DUST_SWORD)
+			return true;
+		return false;
 	}
 
 	@Override
