@@ -1,8 +1,14 @@
 
 package net.mcreator.minecraftgators.enchantment;
 
-public class BaneofCatsEnchantment extends Enchantment {
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.EquipmentSlot;
 
+import net.mcreator.minecraftgators.init.MinecraftGatorsModItems;
+
+public class BaneofCatsEnchantment extends Enchantment {
 	public BaneofCatsEnchantment(EquipmentSlot... slots) {
 		super(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, slots);
 	}
