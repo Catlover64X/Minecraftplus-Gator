@@ -55,14 +55,6 @@
       "registry_name": "cover_me_with_cash"
     },
     {
-      "name": "Rats",
-      "type": "musicdisc",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rats"
-    },
-    {
       "name": "CatFood",
       "type": "food",
       "sortid": 8,
@@ -1148,6 +1140,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cat_shit"
+    },
+    {
+      "name": "RATS",
+      "type": "musicdisc",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rats"
     }
   ],
   "variable_elements": [],
@@ -1159,6 +1159,14 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "rat_disc_sound",
+      "files": [
+        "naijacrawl-music-penelope-scott-rat"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1167,8 +1175,8 @@
       "advancements.blessed.descr": "Use the Cat Alter",
       "entity.minecraft_gators.blaze_king": "Blaze King",
       "block.minecraft_gators.cat_log_y_planks": "Cat Planks",
-      "block.minecraft_gators.compacted_cat_litter": "Compacted Cat Litter",
       "item.minecraft_gators.cat_jesus_dust_armor_boots": "Cat Jesus Dust Boots",
+      "block.minecraft_gators.compacted_cat_litter": "Compacted Cat Litter",
       "item.minecraft.lingering_potion.effect.cat_jesuss_blood": "Lingering Potion of Cat Jesus\u0027s Blood",
       "item.minecraft_gators.betterite_armor_boots": "Betterite Boots",
       "block.minecraft_gators.cat_log_y_fence_gate": "Cat Fence Gate",
@@ -1186,8 +1194,8 @@
       "item.minecraft.tipped_arrow.effect.cat_nip": "Arrow of Cat Nip",
       "item.minecraft.tipped_arrow.effect.cat_jesuss_blood": "Arrow of Cat Jesus\u0027s Blood",
       "block.minecraft_gators.cat_log_y_log": "Cat Log",
-      "item.minecraft_gators.rats": "Music Disc",
       "item.minecraft.splash_potion.effect.cat_jesuss_blood": "Splash Potion of Cat Jesus\u0027s Blood",
+      "item.minecraft_gators.rats": "Music Disc",
       "item.minecraft_gators.cat_jesus_dust_shovel": "Cat Jesus Dust Shovel",
       "block.minecraft_gators.cat_log_y_stairs": "Cat Stairs",
       "advancements.new_realms.descr": "Enter the Cat Realms",
@@ -1220,8 +1228,8 @@
       "block.minecraft_gators.cat_log_y_pressure_plate": "Cat Pressure Plate",
       "block.minecraft_gators.cat_food_block": "Cat Food Block",
       "itemGroup.tabminecraftplus_gator": "Minecraft+ Gator",
-      "item.minecraft_gators.rats.desc": "Penelope Scott - Rat",
       "advancements.hiddenby_bedrock.descr": "Obtain a Ruby",
+      "item.minecraft_gators.rats.desc": "Penelope Scott - Rat",
       "item.minecraft_gators.disc.desc": "Rick Astley - Never going to give you up ",
       "item.minecraft_gators.betterite_armor_leggings": "Betterite Leggings",
       "block.minecraft_gators.cat_alter_block": "Cat Alter ",
@@ -1238,6 +1246,7 @@
       "item.minecraft_gators.betterite_hoe": "Betterite Hoe",
       "biome.minecraft_gators.cat_food_hills": "Cat Food Hills",
       "item.minecraft_gators.emerald_forged_armor_leggings": "Emerald Forged Leggings",
+      "subtitles.rat_disc_sound": "",
       "item.minecraft.splash_potion.effect.cat_nip": "Splash Potion of Cat Nip",
       "item.minecraft_gators.cat_jesus_dust_axe": "Cat Jesus Dust Axe",
       "item.minecraft.potion.effect.cat_jesuss_blood": "Potion of Cat Jesus\u0027s Blood",

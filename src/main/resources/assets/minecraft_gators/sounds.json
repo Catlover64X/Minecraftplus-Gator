@@ -7,5 +7,14 @@
         "stream": false
       }
     ]
+  },
+  "rat_disc_sound": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "minecraft_gators:naijacrawl-music-penelope-scott-rat",
+        "stream": false
+      }
+    ]
   }
 }

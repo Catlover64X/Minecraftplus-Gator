@@ -9,8 +9,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.mcreator.minecraftgators.init.MinecraftGatorsModTabs;
 import net.mcreator.minecraftgators.init.MinecraftGatorsModSounds;
 
-public class RatsItem extends RecordItem {
-	public RatsItem() {
+public class RATSItem extends RecordItem {
+	public RATSItem() {
 		super(0, MinecraftGatorsModSounds.REGISTRY.get(new ResourceLocation("minecraft_gators:rat_disc_sound")),
 				new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR).stacksTo(1).rarity(Rarity.RARE));
 		setRegistryName("rats");

@@ -17,7 +17,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.minecraftgators.item.UnrefinedCatNipItem;
 import net.mcreator.minecraftgators.item.TestItem;
 import net.mcreator.minecraftgators.item.RubyItem;
-import net.mcreator.minecraftgators.item.RatsItem;
+import net.mcreator.minecraftgators.item.RATSItem;
 import net.mcreator.minecraftgators.item.LitterBoxItem;
 import net.mcreator.minecraftgators.item.Emerald_ForgedArmorItem;
 import net.mcreator.minecraftgators.item.DiscItem;
@@ -51,7 +51,6 @@ public class MinecraftGatorsModItems {
 	public static final Item EMERALD_FORGED_ARMOR_CHESTPLATE = register(new Emerald_ForgedArmorItem.Chestplate());
 	public static final Item EMERALD_FORGED_ARMOR_LEGGINGS = register(new Emerald_ForgedArmorItem.Leggings());
 	public static final Item EMERALD_FORGED_ARMOR_BOOTS = register(new Emerald_ForgedArmorItem.Boots());
-	public static final Item RATS = register(new RatsItem());
 	public static final Item CAT_FOOD = register(new CatFoodItem());
 	public static final Item CAT_FOOD_BLOCK = register(MinecraftGatorsModBlocks.CAT_FOOD_BLOCK, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final Item CAT_LOG_Y_LOG = register(MinecraftGatorsModBlocks.CAT_LOG_Y_LOG, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
@@ -115,6 +114,7 @@ public class MinecraftGatorsModItems {
 	public static final Item COOKED_ROTTEN_FLESH = register(new CookedRottenFleshItem());
 	public static final Item CAT_GUN = register(new CatGunItem());
 	public static final Item CAT_SHIT = register(MinecraftGatorsModBlocks.CAT_SHIT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
+	public static final Item RATS = register(new RATSItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
