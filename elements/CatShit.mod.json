@@ -129,10 +129,14 @@
         "value": "CUSTOM:CatDesert"
       }
     ],
-    "blocksToReplace": [],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "blocksToReplace": [
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "frequencyPerChunks": 4,
+    "frequencyOnChunk": 4,
+    "minGenerateHeight": 63,
+    "maxGenerateHeight": 75
   }
 }

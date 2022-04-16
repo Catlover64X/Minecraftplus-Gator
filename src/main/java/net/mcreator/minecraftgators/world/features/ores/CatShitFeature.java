@@ -11,6 +11,7 @@ import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
@@ -25,8 +26,8 @@ import java.util.Random;
 public class CatShitFeature extends OreFeature {
 	public static final CatShitFeature FEATURE = (CatShitFeature) new CatShitFeature().setRegistryName("minecraft_gators:cat_shit");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
-			.configured(new OreConfiguration(CatShitFeatureRuleTest.INSTANCE, MinecraftGatorsModBlocks.CAT_SHIT.defaultBlockState(), 16))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)))).squared().count(10);
+			.configured(new OreConfiguration(CatShitFeatureRuleTest.INSTANCE, MinecraftGatorsModBlocks.CAT_SHIT.defaultBlockState(), 4))
+			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(63), VerticalAnchor.absolute(75)))).squared().count(4);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("minecraft_gators:cat_desert"));
 
 	public CatShitFeature() {
@@ -52,6 +53,8 @@ public class CatShitFeature extends OreFeature {
 
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
+			if (blockAt.getBlock() == Blocks.AIR)
+				blockCriteria = true;
 			return blockCriteria;
 		}
 
