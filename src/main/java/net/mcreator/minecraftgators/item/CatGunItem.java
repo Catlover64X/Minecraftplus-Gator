@@ -39,7 +39,8 @@ public class CatGunItem extends Item {
 	}
 
 	@Override
-	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entityLiving, int timeLeft) {
+	public void onUsingTick(ItemStack itemstack, LivingEntity entityLiving, int count) {
+		Level world = entityLiving.level;
 		if (!world.isClientSide() && entityLiving instanceof ServerPlayer entity) {
 			double x = entity.getX();
 			double y = entity.getY();
@@ -48,6 +49,7 @@ public class CatGunItem extends Item {
 				CatGunEntity entityarrow = CatGunEntity.shoot(world, entity, world.getRandom(), 1f, 9, 9);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+				entity.releaseUsingItem();
 			}
 		}
 	}
