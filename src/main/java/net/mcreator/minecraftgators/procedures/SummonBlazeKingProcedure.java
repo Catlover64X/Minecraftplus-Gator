@@ -22,8 +22,7 @@ public class SummonBlazeKingProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 		}
 	}
 
@@ -37,7 +36,7 @@ public class SummonBlazeKingProcedure {
 		if (entity instanceof Blaze) {
 			if (Math.random() == 1) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BlazeKingEntity(MinecraftGatorsModEntities.BLAZE_KING, _level);
+					Entity entityToSpawn = new BlazeKingEntity(MinecraftGatorsModEntities.BLAZE_KING.get(), _level);
 					entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
 						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,

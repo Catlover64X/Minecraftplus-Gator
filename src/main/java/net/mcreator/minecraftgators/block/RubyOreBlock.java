@@ -21,7 +21,6 @@ import java.util.Collections;
 public class RubyOreBlock extends Block {
 	public RubyOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(7.5f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_ore");
 	}
 
 	@Override
@@ -31,7 +30,7 @@ public class RubyOreBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 4;
 		return false;
 	}
@@ -41,6 +40,6 @@ public class RubyOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.RUBY));
+		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.RUBY.get()));
 	}
 }

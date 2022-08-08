@@ -16,15 +16,25 @@ package net.mcreator.minecraftgators;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.minecraftgators.init.MinecraftGatorsModTabs;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModPotions;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModItems;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModFluids;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModFeatures;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModEntities;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModEnchantments;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModBlocks;
+import net.mcreator.minecraftgators.init.MinecraftGatorsModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,6 +51,18 @@ public class MinecraftGatorsMod {
 
 	public MinecraftGatorsMod() {
 		MinecraftGatorsModTabs.load();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		MinecraftGatorsModBlocks.REGISTRY.register(bus);
+		MinecraftGatorsModItems.REGISTRY.register(bus);
+		MinecraftGatorsModEntities.REGISTRY.register(bus);
+
+		MinecraftGatorsModFeatures.REGISTRY.register(bus);
+		MinecraftGatorsModFluids.REGISTRY.register(bus);
+		MinecraftGatorsModEnchantments.REGISTRY.register(bus);
+
+		MinecraftGatorsModPotions.REGISTRY.register(bus);
+		MinecraftGatorsModBiomes.REGISTRY.register(bus);
+
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

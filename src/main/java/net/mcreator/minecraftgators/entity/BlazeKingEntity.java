@@ -2,8 +2,8 @@
 package net.mcreator.minecraftgators.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.Level;
@@ -39,8 +39,8 @@ public class BlazeKingEntity extends Blaze implements RangedAttackMob {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
 			ServerBossEvent.BossBarOverlay.PROGRESS);
 
-	public BlazeKingEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftGatorsModEntities.BLAZE_KING, world);
+	public BlazeKingEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(MinecraftGatorsModEntities.BLAZE_KING.get(), world);
 	}
 
 	public BlazeKingEntity(EntityType<BlazeKingEntity> type, Level world) {
@@ -50,9 +50,9 @@ public class BlazeKingEntity extends Blaze implements RangedAttackMob {
 		setCustomName(new TextComponent("Blaze King"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(MinecraftGatorsModItems.BLAZEKINGSBLADE));
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(MinecraftGatorsModItems.BETTERITE_ARMOR_HELMET));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(MinecraftGatorsModItems.BETTERITE_ARMOR_CHESTPLATE));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(MinecraftGatorsModItems.BLAZEKINGSBLADE.get()));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(MinecraftGatorsModItems.BETTERITE_ARMOR_HELMET.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(MinecraftGatorsModItems.BETTERITE_ARMOR_CHESTPLATE.get()));
 	}
 
 	@Override
@@ -126,7 +126,7 @@ public class BlazeKingEntity extends Blaze implements RangedAttackMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(MinecraftGatorsModItems.BLAZEKINGSBLADE));
+		this.spawnAtLocation(new ItemStack(MinecraftGatorsModItems.BLAZEKINGSBLADE.get()));
 	}
 
 	@Override
@@ -161,7 +161,8 @@ public class BlazeKingEntity extends Blaze implements RangedAttackMob {
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		BlazeKingEntityProjectile entityarrow = new BlazeKingEntityProjectile(MinecraftGatorsModEntities.BLAZE_KING_PROJECTILE, this, this.level);
+		BlazeKingEntityProjectile entityarrow = new BlazeKingEntityProjectile(MinecraftGatorsModEntities.BLAZE_KING_PROJECTILE.get(), this,
+				this.level);
 		double d0 = target.getY() + target.getEyeHeight() - 1.1;
 		double d1 = target.getX() - this.getX();
 		double d3 = target.getZ() - this.getZ();

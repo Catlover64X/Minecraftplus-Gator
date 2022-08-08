@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_gators:blocks/wetcatlittertexture",
+    "up": "minecraft_gators:blocks/wetcatlittertexture",
+    "north": "minecraft_gators:blocks/wetcatlittertexture",
+    "east": "minecraft_gators:blocks/wetcatlittertexture",
+    "south": "minecraft_gators:blocks/wetcatlittertexture",
+    "west": "minecraft_gators:blocks/wetcatlittertexture",
+    "particle": "minecraft_gators:blocks/wetcatlittertexture"
+  }
+}

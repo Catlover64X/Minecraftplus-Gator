@@ -19,7 +19,6 @@ import net.mcreator.minecraftgators.entity.CatGunEntity;
 public class CatGunItem extends Item {
 	public CatGunItem() {
 		super(new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR).durability(569));
-		setRegistryName("cat_gun");
 	}
 
 	@Override

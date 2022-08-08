@@ -19,7 +19,6 @@ import java.util.Collections;
 public class CompactedCatLitterBlock extends Block {
 	public CompactedCatLitterBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(1f, 10f));
-		setRegistryName("compacted_cat_litter");
 	}
 
 	@Override
@@ -32,6 +31,6 @@ public class CompactedCatLitterBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(MinecraftGatorsModBlocks.CAT_LITTER, (int) (9)));
+		return Collections.singletonList(new ItemStack(MinecraftGatorsModBlocks.CAT_LITTER.get(), 9));
 	}
 }

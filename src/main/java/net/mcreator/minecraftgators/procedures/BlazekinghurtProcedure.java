@@ -21,8 +21,7 @@ public class BlazekinghurtProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity, event.getSource().getEntity());
+			execute(event, event.getEntity(), event.getSource().getEntity());
 		}
 	}
 

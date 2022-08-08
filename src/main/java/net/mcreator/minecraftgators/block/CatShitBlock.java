@@ -17,7 +17,6 @@ import java.util.Collections;
 public class CatShitBlock extends Block {
 	public CatShitBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
-		setRegistryName("cat_shit");
 	}
 
 	@Override

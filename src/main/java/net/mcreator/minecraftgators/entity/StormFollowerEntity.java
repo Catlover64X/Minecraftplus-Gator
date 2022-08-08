@@ -2,8 +2,8 @@
 package net.mcreator.minecraftgators.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -25,6 +25,7 @@ import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
@@ -47,11 +48,11 @@ public class StormFollowerEntity extends Zombie {
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
 			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(MinecraftGatorsModEntities.STORM_FOLLOWER, 20, 4, 4));
+					.add(new MobSpawnSettings.SpawnerData(MinecraftGatorsModEntities.STORM_FOLLOWER.get(), 20, 4, 4));
 	}
 
-	public StormFollowerEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftGatorsModEntities.STORM_FOLLOWER, world);
+	public StormFollowerEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(MinecraftGatorsModEntities.STORM_FOLLOWER.get(), world);
 	}
 
 	public StormFollowerEntity(EntityType<StormFollowerEntity> type, Level world) {
@@ -68,7 +69,12 @@ public class StormFollowerEntity extends Zombie {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
@@ -82,7 +88,7 @@ public class StormFollowerEntity extends Zombie {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(MinecraftGatorsModItems.CAT_FOOD));
+		this.spawnAtLocation(new ItemStack(MinecraftGatorsModItems.STORM_FOLLOWER_MINI_CROSSBOW.get()));
 	}
 
 	@Override
@@ -127,8 +133,8 @@ public class StormFollowerEntity extends Zombie {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MinecraftGatorsModEntities.STORM_FOLLOWER, SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
+		SpawnPlacements.register(MinecraftGatorsModEntities.STORM_FOLLOWER.get(), SpawnPlacements.Type.ON_GROUND,
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 

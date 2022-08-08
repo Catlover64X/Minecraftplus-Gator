@@ -15,8 +15,8 @@ public class CancerSpreadProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Math.random() < 0.1) {
 			{
-				BlockPos _bp = new BlockPos((int) (x - 1), (int) y, (int) z);
-				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.defaultBlockState();
+				BlockPos _bp = new BlockPos(x - 1, y, z);
+				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -29,7 +29,7 @@ public class CancerSpreadProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -44,8 +44,8 @@ public class CancerSpreadProcedure {
 				}
 			}
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
-				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.defaultBlockState();
+				BlockPos _bp = new BlockPos(x, y + 1, z);
+				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -58,7 +58,7 @@ public class CancerSpreadProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -73,8 +73,8 @@ public class CancerSpreadProcedure {
 				}
 			}
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) (z + 1));
-				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.defaultBlockState();
+				BlockPos _bp = new BlockPos(x, y, z + 1);
+				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -87,7 +87,7 @@ public class CancerSpreadProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -102,8 +102,8 @@ public class CancerSpreadProcedure {
 				}
 			}
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
-				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.defaultBlockState();
+				BlockPos _bp = new BlockPos(x, y - 1, z);
+				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -116,7 +116,7 @@ public class CancerSpreadProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -131,8 +131,8 @@ public class CancerSpreadProcedure {
 				}
 			}
 			{
-				BlockPos _bp = new BlockPos((int) (x - 1), (int) y, (int) z);
-				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.defaultBlockState();
+				BlockPos _bp = new BlockPos(x - 1, y, z);
+				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -145,7 +145,7 @@ public class CancerSpreadProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -160,8 +160,8 @@ public class CancerSpreadProcedure {
 				}
 			}
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) (z - 1));
-				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.defaultBlockState();
+				BlockPos _bp = new BlockPos(x, y, z - 1);
+				BlockState _bs = MinecraftGatorsModBlocks.INFECTED_CATALYST.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -174,7 +174,7 @@ public class CancerSpreadProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);

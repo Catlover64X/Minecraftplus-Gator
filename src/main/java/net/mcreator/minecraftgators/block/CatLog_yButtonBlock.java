@@ -18,7 +18,6 @@ import java.util.Collections;
 public class CatLog_yButtonBlock extends WoodButtonBlock {
 	public CatLog_yButtonBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 3f));
-		setRegistryName("cat_log_y_button");
 	}
 
 	@Override

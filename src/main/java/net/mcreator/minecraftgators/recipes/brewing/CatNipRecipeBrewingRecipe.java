@@ -28,13 +28,13 @@ public class CatNipRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == MinecraftGatorsModItems.UNREFINED_CAT_NIP;
+		return ingredient.getItem() == MinecraftGatorsModItems.UNREFINED_CAT_NIP.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionUtils.setPotion(new ItemStack(Items.POTION), MinecraftGatorsModPotions.CAT_NIP);
+			return PotionUtils.setPotion(new ItemStack(Items.POTION), MinecraftGatorsModPotions.CAT_NIP.get());
 		}
 		return ItemStack.EMPTY;
 	}

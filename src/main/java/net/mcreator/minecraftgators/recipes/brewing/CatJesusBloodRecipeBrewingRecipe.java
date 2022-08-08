@@ -26,18 +26,18 @@ public class CatJesusBloodRecipeBrewingRecipe implements IBrewingRecipe {
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
 		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION)
-				&& PotionUtils.getPotion(input) == MinecraftGatorsModPotions.CAT_NIP;
+				&& PotionUtils.getPotion(input) == MinecraftGatorsModPotions.CAT_NIP.get();
 	}
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == MinecraftGatorsModItems.CAT_JESUS_DUST_DUST;
+		return ingredient.getItem() == MinecraftGatorsModItems.CAT_JESUS_DUST_DUST.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionUtils.setPotion(new ItemStack(input.getItem()), MinecraftGatorsModPotions.CAT_JESUSS_BLOOD);
+			return PotionUtils.setPotion(new ItemStack(input.getItem()), MinecraftGatorsModPotions.CAT_JESUSS_BLOOD.get());
 		}
 		return ItemStack.EMPTY;
 	}

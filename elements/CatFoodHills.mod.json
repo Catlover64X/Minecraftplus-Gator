@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Cat Food Hills",
@@ -36,15 +36,13 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.7,
     "temperature": 0.5,
     "baseHeight": 1.2,
     "heightVariation": 1.2,
-    "biomeType": "WARM",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 2,

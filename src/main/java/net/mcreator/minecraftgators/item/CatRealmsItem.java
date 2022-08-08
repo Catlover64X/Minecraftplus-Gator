@@ -15,7 +15,6 @@ import net.mcreator.minecraftgators.block.CatRealmsPortalBlock;
 public class CatRealmsItem extends Item {
 	public CatRealmsItem() {
 		super(new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR).durability(64));
-		setRegistryName("cat_realms");
 	}
 
 	@Override

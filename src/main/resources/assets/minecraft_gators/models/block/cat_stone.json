@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_gators:blocks/catstonetexture",
+    "up": "minecraft_gators:blocks/catstonetexture",
+    "north": "minecraft_gators:blocks/catstonetexture",
+    "east": "minecraft_gators:blocks/catstonetexture",
+    "south": "minecraft_gators:blocks/catstonetexture",
+    "west": "minecraft_gators:blocks/catstonetexture",
+    "particle": "minecraft_gators:blocks/catstonetexture"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "achievement",
   "definition": {
     "achievementName": "Cover Me With Cash",
@@ -18,7 +18,7 @@
     "rewardXP": 3,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:MinecraftplusGator2"
+      "value": "nether/netherite_armor"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"23\" y=\"30\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Emerald_ForgedArmor.helmet</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }

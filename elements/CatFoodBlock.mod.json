@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "cat_food_block",
@@ -86,17 +86,17 @@
     "breakSound": {
       "value": "block.slime.step"
     },
-    "stepSound": {
-      "value": "block.slime.step"
-    },
-    "placeSound": {
-      "value": "block.slime.place"
+    "fallSound": {
+      "value": "entity.slime.squish"
     },
     "hitSound": {
       "value": "block.slime.hit"
     },
-    "fallSound": {
-      "value": "entity.slime.squish"
+    "placeSound": {
+      "value": "block.slime.place"
+    },
+    "stepSound": {
+      "value": "block.slime.step"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -138,6 +138,7 @@
         "value": "Blocks.DIRT#0"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

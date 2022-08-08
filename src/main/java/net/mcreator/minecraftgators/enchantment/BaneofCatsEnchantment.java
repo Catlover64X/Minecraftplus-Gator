@@ -15,9 +15,9 @@ public class BaneofCatsEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		if (stack.getItem() == MinecraftGatorsModItems.BETTERITE_SWORD)
+		if (stack.getItem() == MinecraftGatorsModItems.BETTERITE_SWORD.get())
 			return true;
-		if (stack.getItem() == MinecraftGatorsModItems.CAT_JESUS_DUST_SWORD)
+		if (stack.getItem() == MinecraftGatorsModItems.CAT_JESUS_DUST_SWORD.get())
 			return true;
 		return false;
 	}

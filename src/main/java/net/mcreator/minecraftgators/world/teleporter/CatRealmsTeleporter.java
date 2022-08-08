@@ -36,7 +36,6 @@ import java.util.function.Function;
 import java.util.Optional;
 import java.util.Comparator;
 
-import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -47,8 +46,9 @@ public class CatRealmsTeleporter implements ITeleporter {
 	@SubscribeEvent
 	public static void registerPointOfInterest(RegistryEvent.Register<PoiType> event) {
 		poi = new PoiType("cat_realms_portal",
-				Sets.newHashSet(ImmutableSet.copyOf(MinecraftGatorsModBlocks.CAT_REALMS_PORTAL.getStateDefinition().getPossibleStates())), 0, 1)
-						.setRegistryName("cat_realms_portal");
+				com.google.common.collect.Sets.newHashSet(
+						ImmutableSet.copyOf(MinecraftGatorsModBlocks.CAT_REALMS_PORTAL.get().getStateDefinition().getPossibleStates())),
+				0, 1).setRegistryName("cat_realms_portal");
 		ForgeRegistries.POI_TYPES.register(poi);
 	}
 
@@ -60,26 +60,28 @@ public class CatRealmsTeleporter implements ITeleporter {
 		this.entityEnterPos = entityEnterPos;
 	}
 
-	public Optional<BlockUtil.FoundRectangle> findPortalAround(BlockPos p_77670_, boolean p_77671_) {
+	public Optional<BlockUtil.FoundRectangle> findPortalAround(BlockPos p_192986_, boolean p_192987_, WorldBorder p_192988_) {
 		PoiManager poimanager = this.level.getPoiManager();
-		int i = p_77671_ ? 16 : 128;
-		poimanager.ensureLoadedAndValid(this.level, p_77670_, i);
+		int i = p_192987_ ? 16 : 128;
+		poimanager.ensureLoadedAndValid(this.level, p_192986_, i);
 		Optional<PoiRecord> optional = poimanager.getInSquare((p_77654_) -> {
 			return p_77654_ == poi;
-		}, p_77670_, i, PoiManager.Occupancy.ANY).sorted(Comparator.<PoiRecord>comparingDouble((p_77660_) -> {
-			return p_77660_.getPos().distSqr(p_77670_);
-		}).thenComparingInt((p_77675_) -> {
-			return p_77675_.getPos().getY();
-		})).filter((p_77673_) -> {
-			return this.level.getBlockState(p_77673_.getPos()).hasProperty(BlockStateProperties.HORIZONTAL_AXIS);
+		}, p_192986_, i, PoiManager.Occupancy.ANY).filter((p_192981_) -> {
+			return p_192988_.isWithinBounds(p_192981_.getPos());
+		}).sorted(Comparator.<PoiRecord>comparingDouble((p_192984_) -> {
+			return p_192984_.getPos().distSqr(p_192986_);
+		}).thenComparingInt((p_192992_) -> {
+			return p_192992_.getPos().getY();
+		})).filter((p_192990_) -> {
+			return this.level.getBlockState(p_192990_.getPos()).hasProperty(BlockStateProperties.HORIZONTAL_AXIS);
 		}).findFirst();
-		return optional.map((p_77652_) -> {
-			BlockPos blockpos = p_77652_.getPos();
+		return optional.map((p_192975_) -> {
+			BlockPos blockpos = p_192975_.getPos();
 			this.level.getChunkSource().addRegionTicket(CUSTOM_PORTAL, new ChunkPos(blockpos), 3, blockpos);
 			BlockState blockstate = this.level.getBlockState(blockpos);
 			return BlockUtil.getLargestRectangleAround(blockpos, blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS), 21, Direction.Axis.Y, 21,
-					(p_164749_) -> {
-						return this.level.getBlockState(p_164749_) == blockstate;
+					(p_192978_) -> {
+						return this.level.getBlockState(p_192978_) == blockstate;
 					});
 		});
 	}
@@ -148,7 +150,7 @@ public class CatRealmsTeleporter implements ITeleporter {
 				for (int j3 = 0; j3 < 2; ++j3) {
 					for (int k3 = -1; k3 < 3; ++k3) {
 						BlockState blockstate1 = k3 < 0
-								? MinecraftGatorsModBlocks.COMPACTED_CAT_LITTER.defaultBlockState()
+								? MinecraftGatorsModBlocks.COMPACTED_CAT_LITTER.get().defaultBlockState()
 								: Blocks.AIR.defaultBlockState();
 						blockpos$mutableblockpos.setWithOffset(blockpos, j3 * direction.getStepX() + i3 * direction1.getStepX(), k3,
 								j3 * direction.getStepZ() + i3 * direction1.getStepZ());
@@ -161,11 +163,11 @@ public class CatRealmsTeleporter implements ITeleporter {
 			for (int j2 = -1; j2 < 4; ++j2) {
 				if (l1 == -1 || l1 == 2 || j2 == -1 || j2 == 3) {
 					blockpos$mutableblockpos.setWithOffset(blockpos, l1 * direction.getStepX(), j2, l1 * direction.getStepZ());
-					this.level.setBlock(blockpos$mutableblockpos, MinecraftGatorsModBlocks.COMPACTED_CAT_LITTER.defaultBlockState(), 3);
+					this.level.setBlock(blockpos$mutableblockpos, MinecraftGatorsModBlocks.COMPACTED_CAT_LITTER.get().defaultBlockState(), 3);
 				}
 			}
 		}
-		BlockState blockstate = MinecraftGatorsModBlocks.CAT_REALMS_PORTAL.defaultBlockState().setValue(NetherPortalBlock.AXIS, p_77668_);
+		BlockState blockstate = MinecraftGatorsModBlocks.CAT_REALMS_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, p_77668_);
 		for (int k2 = 0; k2 < 2; ++k2) {
 			for (int l2 = 0; l2 < 3; ++l2) {
 				blockpos$mutableblockpos.setWithOffset(blockpos, k2 * direction.getStepX(), l2, k2 * direction.getStepZ());
@@ -223,7 +225,7 @@ public class CatRealmsTeleporter implements ITeleporter {
 		double d3 = Math.min(2.9999872E7D, worldborder.getMaxZ() - 16.);
 		double d4 = DimensionType.getTeleportationScale(entity.level.dimensionType(), server.dimensionType());
 		BlockPos blockpos1 = new BlockPos(Mth.clamp(entity.getX() * d4, d0, d2), entity.getY(), Mth.clamp(entity.getZ() * d4, d1, d3));
-		return this.getPortalRepositioner(entity, blockpos1).map(repositioner -> {
+		return this.getExitPortal(entity, blockpos1, worldborder).map(repositioner -> {
 			BlockState blockstate = entity.level.getBlockState(this.entityEnterPos);
 			Direction.Axis direction$axis;
 			Vec3 vector3d;
@@ -242,8 +244,8 @@ public class CatRealmsTeleporter implements ITeleporter {
 		}).orElse(new PortalInfo(entity.position(), Vec3.ZERO, entity.getYRot(), entity.getXRot()));
 	}
 
-	protected Optional<BlockUtil.FoundRectangle> getPortalRepositioner(Entity entity, BlockPos pos) {
-		Optional<BlockUtil.FoundRectangle> optional = this.findPortalAround(pos, false);
+	protected Optional<BlockUtil.FoundRectangle> getExitPortal(Entity entity, BlockPos pos, WorldBorder worldBorder) {
+		Optional<BlockUtil.FoundRectangle> optional = this.findPortalAround(pos, false, worldBorder);
 		if (entity instanceof ServerPlayer) {
 			if (optional.isPresent()) {
 				return optional;

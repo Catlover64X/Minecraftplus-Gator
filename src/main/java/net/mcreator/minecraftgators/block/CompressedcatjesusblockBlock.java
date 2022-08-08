@@ -17,7 +17,6 @@ import java.util.Collections;
 public class CompressedcatjesusblockBlock extends Block {
 	public CompressedcatjesusblockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.GRAVEL).strength(105f));
-		setRegistryName("compressedcatjesusblock");
 	}
 
 	@Override

@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "minecraft_gators:cat_jesus_dust_ore"
   },
-  "result": {
-    "item": "minecraft_gators:cat_jesus_dust_dust"
-  }
+  "result": "minecraft_gators:cat_jesus_dust_dust"
 }

@@ -41,7 +41,7 @@ public abstract class Cat_Jesus_DustArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST));
+				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST.get()));
 			}
 
 			@Override
@@ -64,7 +64,6 @@ public abstract class Cat_Jesus_DustArmorItem extends ArmorItem {
 	public static class Helmet extends Cat_Jesus_DustArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("cat_jesus_dust_armor_helmet");
 		}
 
 		@Override
@@ -76,7 +75,6 @@ public abstract class Cat_Jesus_DustArmorItem extends ArmorItem {
 	public static class Chestplate extends Cat_Jesus_DustArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("cat_jesus_dust_armor_chestplate");
 		}
 
 		@Override
@@ -88,7 +86,6 @@ public abstract class Cat_Jesus_DustArmorItem extends ArmorItem {
 	public static class Leggings extends Cat_Jesus_DustArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("cat_jesus_dust_armor_leggings");
 		}
 
 		@Override
@@ -100,7 +97,6 @@ public abstract class Cat_Jesus_DustArmorItem extends ArmorItem {
 	public static class Boots extends Cat_Jesus_DustArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("cat_jesus_dust_armor_boots");
 		}
 
 		@Override

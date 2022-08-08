@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft_gators:cat_dirt"
+    "minecraft_gators:cat_dirt",
+    "minecraft_gators:wet_cat_litter"
   ]
 }

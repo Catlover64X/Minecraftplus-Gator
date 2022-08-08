@@ -1,7 +1,6 @@
 
 package net.mcreator.minecraftgators.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -37,20 +36,14 @@ public class BetteriteSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT));
+				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT.get()));
 			}
 		}, 3, -3f, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-		setRegistryName("betterite_sword");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
 		BaneofCatsEnchantmentEffectProcedure.execute(entity, sourceentity, itemstack);
 		return retval;
 	}

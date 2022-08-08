@@ -21,7 +21,6 @@ import java.util.Collections;
 public class Cat_Jesus_DustOreBlock extends Block {
 	public Cat_Jesus_DustOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(11.7f, 14.853256809033281f).requiresCorrectToolForDrops());
-		setRegistryName("cat_jesus_dust_ore");
 	}
 
 	@Override
@@ -31,7 +30,7 @@ public class Cat_Jesus_DustOreBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 8;
 		return false;
 	}
@@ -41,6 +40,6 @@ public class Cat_Jesus_DustOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST, (int) (3)));
+		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST.get(), 3));
 	}
 }

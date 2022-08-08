@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "livingentity",
   "definition": {
     "mobName": "Storm Follower",
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:CatFood"
+      "value": "CUSTOM:StormFollowerMiniCrossbow"
     },
     "livingSound": {
       "value": "entity.cat.ambient"

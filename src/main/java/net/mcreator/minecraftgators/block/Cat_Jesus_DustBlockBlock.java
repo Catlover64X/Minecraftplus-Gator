@@ -19,7 +19,6 @@ import java.util.Collections;
 public class Cat_Jesus_DustBlockBlock extends Block {
 	public Cat_Jesus_DustBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("cat_jesus_dust_block");
 	}
 
 	@Override
@@ -29,7 +28,7 @@ public class Cat_Jesus_DustBlockBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 8;
 		return false;
 	}

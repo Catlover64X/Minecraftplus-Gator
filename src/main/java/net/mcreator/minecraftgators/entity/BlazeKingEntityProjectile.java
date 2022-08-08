@@ -1,8 +1,8 @@
 
 package net.mcreator.minecraftgators.entity;
 
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -19,8 +19,8 @@ import net.mcreator.minecraftgators.init.MinecraftGatorsModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class BlazeKingEntityProjectile extends AbstractArrow implements ItemSupplier {
-	public BlazeKingEntityProjectile(FMLPlayMessages.SpawnEntity packet, Level world) {
-		super(MinecraftGatorsModEntities.BLAZE_KING_PROJECTILE, world);
+	public BlazeKingEntityProjectile(PlayMessages.SpawnEntity packet, Level world) {
+		super(MinecraftGatorsModEntities.BLAZE_KING_PROJECTILE.get(), world);
 	}
 
 	public BlazeKingEntityProjectile(EntityType<? extends BlazeKingEntityProjectile> type, Level world) {

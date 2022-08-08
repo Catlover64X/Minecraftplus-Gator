@@ -34,9 +34,8 @@ public class BetteriteHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT));
+				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT.get()));
 			}
 		}, 0, -3f, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-		setRegistryName("betterite_hoe");
 	}
 }

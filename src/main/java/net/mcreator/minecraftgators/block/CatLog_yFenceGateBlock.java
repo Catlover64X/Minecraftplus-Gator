@@ -18,7 +18,6 @@ import java.util.Collections;
 public class CatLog_yFenceGateBlock extends FenceGateBlock {
 	public CatLog_yFenceGateBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 3f));
-		setRegistryName("cat_log_y_fence_gate");
 	}
 
 	@Override

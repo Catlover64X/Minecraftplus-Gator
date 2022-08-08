@@ -25,14 +25,13 @@ import java.util.Collections;
 
 public class CatFoodBlockBlock extends Block {
 	public CatFoodBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.GRASS)
+		super(BlockBehaviour.Properties.of(Material.GRASS, MaterialColor.PODZOL)
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.slime_block.step")),
 						() -> new SoundEvent(new ResourceLocation("block.slime_block.step")),
 						() -> new SoundEvent(new ResourceLocation("block.slime_block.place")),
 						() -> new SoundEvent(new ResourceLocation("block.slime_block.hit")),
 						() -> new SoundEvent(new ResourceLocation("entity.slime.squish"))))
 				.strength(0.5f, 5f).speedFactor(0.6f).jumpFactor(0.6f));
-		setRegistryName("cat_food_block");
 	}
 
 	@Override
@@ -46,11 +45,6 @@ public class CatFoodBlockBlock extends Block {
 	}
 
 	@Override
-	public MaterialColor defaultMaterialColor() {
-		return MaterialColor.PODZOL;
-	}
-
-	@Override
 	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
 		return true;
 	}
@@ -60,6 +54,6 @@ public class CatFoodBlockBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.CAT_FOOD));
+		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.CAT_FOOD.get()));
 	}
 }

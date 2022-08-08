@@ -20,7 +20,6 @@ import java.util.Collections;
 public class RubyBlockBlock extends Block {
 	public RubyBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(15f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_block");
 	}
 
 	@Override
@@ -34,13 +33,13 @@ public class RubyBlockBlock extends Block {
 	}
 
 	@Override
-	public int getSignal(BlockState blockstate, BlockGetter blockAccess, BlockPos pos, Direction side) {
+	public int getSignal(BlockState blockstate, BlockGetter blockAccess, BlockPos pos, Direction direction) {
 		return 6;
 	}
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 4;
 		return false;
 	}

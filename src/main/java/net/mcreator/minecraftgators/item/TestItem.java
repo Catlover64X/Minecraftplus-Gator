@@ -1,7 +1,6 @@
 
 package net.mcreator.minecraftgators.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -40,17 +39,11 @@ public class TestItem extends SwordItem {
 				return Ingredient.of(new ItemStack(Items.BLAZE_ROD));
 			}
 		}, 3, -2f, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR).fireResistant());
-		setRegistryName("blazekingsblade");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
 		LightonFireProcedure.execute(entity);
 		return retval;
 	}

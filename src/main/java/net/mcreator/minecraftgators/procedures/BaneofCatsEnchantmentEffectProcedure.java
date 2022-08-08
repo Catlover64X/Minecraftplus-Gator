@@ -15,10 +15,10 @@ public class BaneofCatsEnchantmentEffectProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof StormFollowerEntity) {
-			if (EnchantmentHelper.getItemEnchantmentLevel(MinecraftGatorsModEnchantments.BANEOF_CATS, itemstack) == 1) {
+			if (EnchantmentHelper.getItemEnchantmentLevel(MinecraftGatorsModEnchantments.BANEOF_CATS.get(), itemstack) == 1) {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 1, (false), (false)));
-			} else if (EnchantmentHelper.getItemEnchantmentLevel(MinecraftGatorsModEnchantments.BANEOF_CATS, itemstack) == 2) {
+			} else if (EnchantmentHelper.getItemEnchantmentLevel(MinecraftGatorsModEnchantments.BANEOF_CATS.get(), itemstack) == 2) {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 2, (false), (false)));
 			}

@@ -1,6 +1,7 @@
 
 package net.mcreator.minecraftgators.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -17,12 +18,16 @@ public class CatNipFood2Item extends Item {
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(4f)
 
 						.build()));
-		setRegistryName("cat_nip_food_2");
 	}
 
 	@Override
-	public int getUseDuration(ItemStack stack) {
+	public int getUseDuration(ItemStack itemstack) {
 		return 80;
+	}
+
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
 	}
 
 	@Override

@@ -18,7 +18,6 @@ import java.util.Collections;
 public class CatLog_yPressurePlateBlock extends PressurePlateBlock {
 	public CatLog_yPressurePlateBlock() {
 		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 3f));
-		setRegistryName("cat_log_y_pressure_plate");
 	}
 
 	@Override

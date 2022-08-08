@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -15,13 +15,13 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:CatFoodBlock"
+      "value": "CUSTOM:CatStone"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_LAVA"
+      "value": "CUSTOM:Catrealmsfluid"
     },
     "airColor": {
-      "value": -65485,
+      "value": -10066177,
       "falpha": 0.0
     },
     "canRespawnHere": false,

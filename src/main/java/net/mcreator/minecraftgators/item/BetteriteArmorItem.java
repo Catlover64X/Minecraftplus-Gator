@@ -41,7 +41,7 @@ public abstract class BetteriteArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.RUBY));
+				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.RUBY.get()));
 			}
 
 			@Override
@@ -64,7 +64,6 @@ public abstract class BetteriteArmorItem extends ArmorItem {
 	public static class Helmet extends BetteriteArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("betterite_armor_helmet");
 		}
 
 		@Override
@@ -76,7 +75,6 @@ public abstract class BetteriteArmorItem extends ArmorItem {
 	public static class Chestplate extends BetteriteArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("betterite_armor_chestplate");
 		}
 
 		@Override
@@ -88,7 +86,6 @@ public abstract class BetteriteArmorItem extends ArmorItem {
 	public static class Leggings extends BetteriteArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("betterite_armor_leggings");
 		}
 
 		@Override
@@ -100,7 +97,6 @@ public abstract class BetteriteArmorItem extends ArmorItem {
 	public static class Boots extends BetteriteArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-			setRegistryName("betterite_armor_boots");
 		}
 
 		@Override

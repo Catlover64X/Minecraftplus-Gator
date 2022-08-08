@@ -19,10 +19,10 @@ public class InsertofCompactCatLitterDetectProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT))
+				? _playerHasItem.getInventory().contains(new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT.get()))
 				: false) {
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT);
+				ItemStack _stktoremove = new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
@@ -36,7 +36,7 @@ public class InsertofCompactCatLitterDetectProcedure {
 				}
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST);
+				ItemStack _setstack = new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST.get());
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}

@@ -18,7 +18,6 @@ import java.util.Collections;
 public class CatLog_yLeavesBlock extends LeavesBlock {
 	public CatLog_yLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.2f).noOcclusion());
-		setRegistryName("cat_log_y_leaves");
 	}
 
 	@Override

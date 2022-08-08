@@ -35,5 +35,5 @@
   "rewards": {
     "experience": 3
   },
-  "parent": "minecraft_gators:minecraftplus_gator_2"
+  "parent": "minecraft:nether/netherite_armor"
 }

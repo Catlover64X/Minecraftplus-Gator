@@ -4,29 +4,16 @@
  */
 package net.mcreator.minecraftgators.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.enchantment.Enchantment;
 
 import net.mcreator.minecraftgators.enchantment.BaneofCatsEnchantment;
+import net.mcreator.minecraftgators.MinecraftGatorsMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MinecraftGatorsModEnchantments {
-	private static final List<Enchantment> REGISTRY = new ArrayList<>();
-	public static final Enchantment BANEOF_CATS = register("minecraft_gators:baneof_cats", new BaneofCatsEnchantment());
-
-	private static Enchantment register(String registryname, Enchantment enchantment) {
-		REGISTRY.add(enchantment.setRegistryName(registryname));
-		return enchantment;
-	}
-
-	@SubscribeEvent
-	public static void registerEnchantments(RegistryEvent.Register<Enchantment> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Enchantment[0]));
-	}
+	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, MinecraftGatorsMod.MODID);
+	public static final RegistryObject<Enchantment> BANEOF_CATS = REGISTRY.register("baneof_cats", () -> new BaneofCatsEnchantment());
 }

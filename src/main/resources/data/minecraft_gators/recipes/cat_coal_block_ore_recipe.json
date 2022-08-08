@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_gators:cat_coal_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft_gators:cat_coal_item",
+    "count": 9
+  }
+}

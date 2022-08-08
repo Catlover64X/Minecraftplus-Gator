@@ -22,7 +22,6 @@ import java.util.Collections;
 public class InfectedCatalystBlock extends Block {
 	public InfectedCatalystBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(99f));
-		setRegistryName("infected_catalyst");
 	}
 
 	@Override
@@ -41,7 +40,7 @@ public class InfectedCatalystBlock extends Block {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
+		world.scheduleTick(pos, this, 10);
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class InfectedCatalystBlock extends Block {
 		int z = pos.getZ();
 
 		CancerSpreadProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
+		world.scheduleTick(pos, this, 10);
 	}
 }

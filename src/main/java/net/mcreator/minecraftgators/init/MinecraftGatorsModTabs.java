@@ -17,7 +17,7 @@ public class MinecraftGatorsModTabs {
 		TAB_MINECRAFTPLUS_GATOR = new CreativeModeTab("tabminecraftplus_gator") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT);
+				return new ItemStack(MinecraftGatorsModItems.BETTERITE_INGOT.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

@@ -1,6 +1,7 @@
 
 package net.mcreator.minecraftgators.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
@@ -16,7 +17,16 @@ public class CatFoodItem extends Item {
 	public CatFoodItem() {
 		super(new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR).stacksTo(1).rarity(Rarity.COMMON)
 				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(2f).alwaysEat().meat().build()));
-		setRegistryName("cat_food");
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack) {
+		return 32;
+	}
+
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
 	}
 
 	@Override

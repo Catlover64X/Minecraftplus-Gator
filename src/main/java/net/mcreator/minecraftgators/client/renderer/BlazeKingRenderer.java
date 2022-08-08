@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftgators.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;

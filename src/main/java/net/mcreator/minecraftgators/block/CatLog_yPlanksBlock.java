@@ -20,7 +20,6 @@ import java.util.Collections;
 public class CatLog_yPlanksBlock extends Block {
 	public CatLog_yPlanksBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2f, 3f).requiresCorrectToolForDrops());
-		setRegistryName("cat_log_y_planks");
 	}
 
 	@Override
@@ -35,7 +34,7 @@ public class CatLog_yPlanksBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}

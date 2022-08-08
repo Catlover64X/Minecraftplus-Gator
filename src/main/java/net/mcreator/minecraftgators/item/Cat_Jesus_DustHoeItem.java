@@ -34,9 +34,8 @@ public class Cat_Jesus_DustHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST));
+				return Ingredient.of(new ItemStack(MinecraftGatorsModItems.CAT_JESUS_DUST_DUST.get()));
 			}
 		}, 0, -3f, new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR));
-		setRegistryName("cat_jesus_dust_hoe");
 	}
 }

@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "minecraft_gators:unrefined_cat_nip"
   },
-  "result": {
-    "item": "minecraft_gators:cat_nip_food_2"
-  }
+  "result": "minecraft_gators:cat_nip_food_2"
 }

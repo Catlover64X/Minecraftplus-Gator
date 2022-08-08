@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft_gators:block/cat_shit",
+  "parent": "minecraft_gators:block/cat_poop",
   "display": {
     "thirdperson": {
       "rotation": [

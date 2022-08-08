@@ -28,7 +28,6 @@ import java.util.Collections;
 public class CatAlterBlockBlock extends SlabBlock {
 	public CatAlterBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.ANVIL).strength(1f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("cat_alter_block");
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class CatAlterBlockBlock extends SlabBlock {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 4;
 		return false;
 	}

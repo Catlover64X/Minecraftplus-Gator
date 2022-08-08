@@ -26,7 +26,6 @@ import java.util.Collections;
 public class CatNipPlantBlock extends IronBarsBlock {
 	public CatNipPlantBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(1f, 10f));
-		setRegistryName("cat_nip_plant");
 	}
 
 	@Override
@@ -39,13 +38,13 @@ public class CatNipPlantBlock extends IronBarsBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.UNREFINED_CAT_NIP));
+		return Collections.singletonList(new ItemStack(MinecraftGatorsModItems.UNREFINED_CAT_NIP.get()));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void blockColorLoad(ColorHandlerEvent.Block event) {
 		event.getBlockColors().register((bs, world, pos, index) -> {
 			return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : GrassColor.get(0.5D, 1.0D);
-		}, MinecraftGatorsModBlocks.CAT_NIP_PLANT);
+		}, MinecraftGatorsModBlocks.CAT_NIP_PLANT.get());
 	}
 }

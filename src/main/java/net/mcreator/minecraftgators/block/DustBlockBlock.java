@@ -17,7 +17,6 @@ import java.util.Collections;
 public class DustBlockBlock extends FallingBlock {
 	public DustBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
-		setRegistryName("dust_block");
 	}
 
 	@Override

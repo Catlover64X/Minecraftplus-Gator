@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "1": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "2": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "3": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "4": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "5": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "6": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "7": {
+      "item": "minecraft_gators:cat_coal_item"
+    },
+    "8": {
+      "item": "minecraft_gators:cat_coal_item"
+    }
+  },
+  "result": {
+    "item": "minecraft_gators:cat_coal_block",
+    "count": 1
+  }
+}

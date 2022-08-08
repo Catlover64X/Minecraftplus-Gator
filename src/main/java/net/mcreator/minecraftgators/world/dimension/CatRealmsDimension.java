@@ -1,7 +1,6 @@
 
 package net.mcreator.minecraftgators.world.dimension;
 
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -12,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.carver.WorldCarver;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
@@ -35,19 +35,13 @@ public class CatRealmsDimension {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(MinecraftGatorsModBlocks.CAT_FOOD_BLOCK);
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_food_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_food_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_food_hills")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_food_hills")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_desert")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("minecraft_gators:cat_desert")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
+			replaceableBlocks.add(MinecraftGatorsModBlocks.CAT_STONE.get());
+			replaceableBlocks.add(MinecraftGatorsModBlocks.CAT_FOOD_BLOCK.get());
+			replaceableBlocks.add(Blocks.STONE);
+			replaceableBlocks.add(MinecraftGatorsModBlocks.CAT_DIRT.get());
+			replaceableBlocks.add(MinecraftGatorsModBlocks.CAT_LITTER.get());
+			replaceableBlocks.add(MinecraftGatorsModBlocks.CAT_LITTER.get());
+			replaceableBlocks.add(MinecraftGatorsModBlocks.CAT_FOOD_BLOCK.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();
@@ -62,7 +56,7 @@ public class CatRealmsDimension {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(Float.NaN, true, DimensionSpecialEffects.SkyType.NONE, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
-					return new Vec3(1, 0, 0.2);
+					return new Vec3(0.4, 0.4, 1);
 				}
 
 				@Override
@@ -75,7 +69,7 @@ public class CatRealmsDimension {
 	}
 
 	@SubscribeEvent
-	public void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
+	public static void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
 		Entity entity = event.getPlayer();
 		Level world = entity.level;
 		double x = entity.getX();
