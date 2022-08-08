@@ -19,7 +19,6 @@ import net.minecraft.core.Holder;
 
 import net.mcreator.minecraftgators.world.features.ores.RubyOreFeature;
 import net.mcreator.minecraftgators.world.features.ores.Cat_Jesus_DustOreFeature;
-import net.mcreator.minecraftgators.world.features.ores.CatShitFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatNipPlantFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatLog_yLogFeature;
 import net.mcreator.minecraftgators.world.features.ores.CatFoodBlockFeature;
@@ -52,8 +51,6 @@ public class MinecraftGatorsModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CatDirtFeature.GENERATE_BIOMES, CatDirtFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> STRANGETEMPLE = register("strangetemple", StrangetempleFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.SURFACE_STRUCTURES, StrangetempleFeature.GENERATE_BIOMES, StrangetempleFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> CAT_POOP = register("cat_poop", CatShitFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CatShitFeature.GENERATE_BIOMES, CatShitFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> CAT_COAL_ORE = register("cat_coal_ore", CatCoalOreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CatCoalOreFeature.GENERATE_BIOMES, CatCoalOreFeature::placedFeature));
 

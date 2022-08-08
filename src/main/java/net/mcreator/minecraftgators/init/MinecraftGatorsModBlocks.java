@@ -27,7 +27,6 @@ import net.mcreator.minecraftgators.block.Cat_Jesus_DustOreBlock;
 import net.mcreator.minecraftgators.block.Cat_Jesus_DustBlockBlock;
 import net.mcreator.minecraftgators.block.Cat_CoalBlockBlock;
 import net.mcreator.minecraftgators.block.CatStoneBlock;
-import net.mcreator.minecraftgators.block.CatShitBlock;
 import net.mcreator.minecraftgators.block.CatRealmsPortalBlock;
 import net.mcreator.minecraftgators.block.CatNipPlantBlock;
 import net.mcreator.minecraftgators.block.CatLog_yStairsBlock;
@@ -73,7 +72,6 @@ public class MinecraftGatorsModBlocks {
 			() -> new CompressedcatjesusblockBlock());
 	public static final RegistryObject<Block> CAT_REALMS_PORTAL = REGISTRY.register("cat_realms_portal", () -> new CatRealmsPortalBlock());
 	public static final RegistryObject<Block> CAT_DIRT = REGISTRY.register("cat_dirt", () -> new CatDirtBlock());
-	public static final RegistryObject<Block> CAT_POOP = REGISTRY.register("cat_poop", () -> new CatShitBlock());
 	public static final RegistryObject<Block> WET_CAT_LITTER = REGISTRY.register("wet_cat_litter", () -> new WetCatLitterBlock());
 	public static final RegistryObject<Block> CATREALMSFLUID = REGISTRY.register("catrealmsfluid", () -> new CatrealmsfluidBlock());
 	public static final RegistryObject<Block> CAT_COAL_BLOCK = REGISTRY.register("cat_coal_block", () -> new Cat_CoalBlockBlock());

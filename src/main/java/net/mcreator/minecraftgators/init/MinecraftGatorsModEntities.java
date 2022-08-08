@@ -18,7 +18,6 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.minecraftgators.entity.StormFollowerMiniCrossbowEntity;
 import net.mcreator.minecraftgators.entity.StormFollowerEntity;
-import net.mcreator.minecraftgators.entity.CatGunEntity;
 import net.mcreator.minecraftgators.entity.BlazeKingEntityProjectile;
 import net.mcreator.minecraftgators.entity.BlazeKingEntity;
 import net.mcreator.minecraftgators.MinecraftGatorsMod;
@@ -37,9 +36,6 @@ public class MinecraftGatorsModEntities {
 					.setTrackingRange(999).setUpdateInterval(3).setCustomClientFactory(StormFollowerEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<CatGunEntity>> CAT_GUN = register("projectile_cat_gun",
-			EntityType.Builder.<CatGunEntity>of(CatGunEntity::new, MobCategory.MISC).setCustomClientFactory(CatGunEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<StormFollowerMiniCrossbowEntity>> STORM_FOLLOWER_MINI_CROSSBOW = register(
 			"projectile_storm_follower_mini_crossbow",
 			EntityType.Builder.<StormFollowerMiniCrossbowEntity>of(StormFollowerMiniCrossbowEntity::new, MobCategory.MISC)

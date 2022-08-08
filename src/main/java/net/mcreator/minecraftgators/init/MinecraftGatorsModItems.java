@@ -18,10 +18,6 @@ import net.mcreator.minecraftgators.item.UnrefinedCatNipItem;
 import net.mcreator.minecraftgators.item.TestItem;
 import net.mcreator.minecraftgators.item.StormFollowerMiniCrossbowItem;
 import net.mcreator.minecraftgators.item.RubyItem;
-<<<<<<< HEAD
-=======
-import net.mcreator.minecraftgators.item.RATSItem;
->>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
 import net.mcreator.minecraftgators.item.LitterBoxItem;
 import net.mcreator.minecraftgators.item.Emerald_ForgedArmorItem;
 import net.mcreator.minecraftgators.item.DiscItem;
@@ -36,7 +32,6 @@ import net.mcreator.minecraftgators.item.Cat_Jesus_DustAxeItem;
 import net.mcreator.minecraftgators.item.Cat_Jesus_DustArmorItem;
 import net.mcreator.minecraftgators.item.CatRealmsItem;
 import net.mcreator.minecraftgators.item.CatNipFood2Item;
-import net.mcreator.minecraftgators.item.CatGunItem;
 import net.mcreator.minecraftgators.item.CatFoodItem;
 import net.mcreator.minecraftgators.item.CatCoalItemItem;
 import net.mcreator.minecraftgators.item.BetteriteSwordItem;
@@ -49,7 +44,6 @@ import net.mcreator.minecraftgators.item.BetteriteArmorItem;
 import net.mcreator.minecraftgators.MinecraftGatorsMod;
 
 public class MinecraftGatorsModItems {
-<<<<<<< HEAD
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, MinecraftGatorsMod.MODID);
 	public static final RegistryObject<Item> EMERALD_FORGED_ARMOR_HELMET = REGISTRY.register("emerald_forged_armor_helmet",
 			() -> new Emerald_ForgedArmorItem.Helmet());
@@ -60,22 +54,6 @@ public class MinecraftGatorsModItems {
 	public static final RegistryObject<Item> EMERALD_FORGED_ARMOR_BOOTS = REGISTRY.register("emerald_forged_armor_boots",
 			() -> new Emerald_ForgedArmorItem.Boots());
 	public static final RegistryObject<Item> CAT_FOOD_BLOCK = block(MinecraftGatorsModBlocks.CAT_FOOD_BLOCK,
-=======
-	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item EMERALD_FORGED_ARMOR_HELMET = register(new Emerald_ForgedArmorItem.Helmet());
-	public static final Item EMERALD_FORGED_ARMOR_CHESTPLATE = register(new Emerald_ForgedArmorItem.Chestplate());
-	public static final Item EMERALD_FORGED_ARMOR_LEGGINGS = register(new Emerald_ForgedArmorItem.Leggings());
-	public static final Item EMERALD_FORGED_ARMOR_BOOTS = register(new Emerald_ForgedArmorItem.Boots());
-	public static final Item CAT_FOOD = register(new CatFoodItem());
-	public static final Item CAT_FOOD_BLOCK = register(MinecraftGatorsModBlocks.CAT_FOOD_BLOCK, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item CAT_LOG_Y_LOG = register(MinecraftGatorsModBlocks.CAT_LOG_Y_LOG, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item CAT_LOG_Y_PLANKS = register(MinecraftGatorsModBlocks.CAT_LOG_Y_PLANKS, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item CAT_LOG_Y_LEAVES = register(MinecraftGatorsModBlocks.CAT_LOG_Y_LEAVES, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item CAT_LOG_Y_STAIRS = register(MinecraftGatorsModBlocks.CAT_LOG_Y_STAIRS, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item CAT_LOG_Y_SLAB = register(MinecraftGatorsModBlocks.CAT_LOG_Y_SLAB, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item CAT_LOG_Y_FENCE = register(MinecraftGatorsModBlocks.CAT_LOG_Y_FENCE, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item CAT_LOG_Y_FENCE_GATE = register(MinecraftGatorsModBlocks.CAT_LOG_Y_FENCE_GATE,
->>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
 			MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final RegistryObject<Item> CAT_LOG_Y_LOG = block(MinecraftGatorsModBlocks.CAT_LOG_Y_LOG,
 			MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
@@ -87,7 +65,6 @@ public class MinecraftGatorsModItems {
 			MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final RegistryObject<Item> CAT_LOG_Y_SLAB = block(MinecraftGatorsModBlocks.CAT_LOG_Y_SLAB,
 			MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-<<<<<<< HEAD
 	public static final RegistryObject<Item> CAT_LOG_Y_FENCE = block(MinecraftGatorsModBlocks.CAT_LOG_Y_FENCE,
 			MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final RegistryObject<Item> CAT_LOG_Y_FENCE_GATE = block(MinecraftGatorsModBlocks.CAT_LOG_Y_FENCE_GATE,
@@ -155,8 +132,6 @@ public class MinecraftGatorsModItems {
 					new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR)));
 	public static final RegistryObject<Item> DISC = REGISTRY.register("disc", () -> new DiscItem());
 	public static final RegistryObject<Item> CAT_DIRT = block(MinecraftGatorsModBlocks.CAT_DIRT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final RegistryObject<Item> CAT_GUN = REGISTRY.register("cat_gun", () -> new CatGunItem());
-	public static final RegistryObject<Item> CAT_POOP = block(MinecraftGatorsModBlocks.CAT_POOP, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final RegistryObject<Item> CAT_FOOD = REGISTRY.register("cat_food", () -> new CatFoodItem());
 	public static final RegistryObject<Item> CAT_NIP_FOOD_2 = REGISTRY.register("cat_nip_food_2", () -> new CatNipFood2Item());
 	public static final RegistryObject<Item> COOKED_ROTTEN_FLESH = REGISTRY.register("cooked_rotten_flesh", () -> new CookedRottenFleshItem());
@@ -171,17 +146,6 @@ public class MinecraftGatorsModItems {
 			MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
 	public static final RegistryObject<Item> STORM_FOLLOWER_MINI_CROSSBOW = REGISTRY.register("storm_follower_mini_crossbow",
 			() -> new StormFollowerMiniCrossbowItem());
-=======
-	public static final Item CAT_REALMS = register(new CatRealmsItem());
-	public static final Item STORM_FOLLOWER = register(new SpawnEggItem(MinecraftGatorsModEntities.STORM_FOLLOWER, -16777063, -16777216,
-			new Item.Properties().tab(MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR)).setRegistryName("storm_follower_spawn_egg"));
-	public static final Item DISC = register(new DiscItem());
-	public static final Item CAT_DIRT = register(MinecraftGatorsModBlocks.CAT_DIRT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item COOKED_ROTTEN_FLESH = register(new CookedRottenFleshItem());
-	public static final Item CAT_GUN = register(new CatGunItem());
-	public static final Item CAT_SHIT = register(MinecraftGatorsModBlocks.CAT_SHIT, MinecraftGatorsModTabs.TAB_MINECRAFTPLUS_GATOR);
-	public static final Item RATS = register(new RATSItem());
->>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
