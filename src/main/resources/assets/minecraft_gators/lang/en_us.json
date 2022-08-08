@@ -5,13 +5,19 @@
   "item.minecraft_gators.betterite_axe": "Betterite Axe",
   "block.minecraft_gators.cat_jesus_dust_block": "Block of Cat Jesus Dust",
   "item.minecraft_gators.betterite_armor_helmet": "Betterite Helmet",
+<<<<<<< HEAD
   "block.minecraft_gators.catrealmsfluid": "Catrealmsfluid",
+=======
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "block.minecraft_gators.cat_log_y_leaves": "Cat Leaves",
   "item.minecraft.lingering_potion.effect.cat_nip": "Lingering Potion of Cat Nip",
   "item.minecraft.tipped_arrow.effect.cat_nip": "Arrow of Cat Nip",
   "item.minecraft_gators.cat_jesus_dust_shovel": "Cat Jesus Dust Shovel",
   "block.minecraft_gators.cat_log_y_stairs": "Cat Stairs",
+<<<<<<< HEAD
   "advancements.betteriteachievement.descr": "Obtain Betterite",
+=======
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "entity.minecraft_gators.storm_follower": "Storm Follower",
   "block.minecraft_gators.compressedcatjesusblock": "Compressed Cat Jesus Block",
   "item.minecraft_gators.storm_follower_spawn_egg": "Storm Follower Spawn Egg",
@@ -21,26 +27,46 @@
   "item.minecraft.potion.effect.cat_nip": "Potion of Cat Nip",
   "block.minecraft_gators.ruby_block": "Block of Ruby",
   "enchantment.minecraft_gators.baneof_cats": "Bane of Cats",
+<<<<<<< HEAD
   "block.minecraft_gators.cat_coal_block": "Block of Cat_Coal",
+=======
+  "advancements.hiddenby_bedrock.title": "Hidden by Bedrock",
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "block.minecraft_gators.cat_jesus_dust_ore": "Cat Jesus Dust Ore",
   "block.minecraft_gators.cat_log_y_button": "Cat Button",
   "item.minecraft_gators.blaze_king_spawn_egg": "Blaze King Spawn Egg",
   "biome.minecraft_gators.cat_desert": "Cat Desert",
   "item.minecraft_gators.cat_food": "Cat Food",
+<<<<<<< HEAD
   "item.minecraft_gators.storm_follower_mini_crossbow": "Storm Follower Slingshot",
+=======
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "advancements.minecraftplus_gator_2.descr": "Install the Minecraft+ Gator Mod!",
+<<<<<<< HEAD
+=======
+  "item.minecraft_gators.rats.desc": "Penelope Scott - Rat",
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "block.minecraft_gators.cat_alter_block": "Cat Alter ",
   "item.minecraft_gators.emerald_forged_armor_helmet": "Emerald Forged Helmet",
   "block.minecraft_gators.dust_block": "Dust Block",
   "item.minecraft_gators.betterite_sword": "Betterite Sword",
+<<<<<<< HEAD
+=======
+  "block.minecraft_gators.cat_shit": "Cat Poop",
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "item.minecraft_gators.cat_jesus_dust_armor_leggings": "Cat Jesus Dust Leggings",
   "item.minecraft_gators.blazekingsblade": "Blaze King\u0027s Blade",
   "biome.minecraft_gators.cat_food_hills": "Cat Food Hills",
+<<<<<<< HEAD
+=======
+  "subtitles.rat_disc_sound": "",
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "item.minecraft.splash_potion.effect.cat_nip": "Splash Potion of Cat Nip",
   "item.minecraft_gators.cat_jesus_dust_axe": "Cat Jesus Dust Axe",
   "block.minecraft_gators.ruby_ore": "Ruby Ore",
   "item.minecraft_gators.cat_gun": "Cat Gun",
   "block.minecraft_gators.cat_litter": "Cat Litter",
+<<<<<<< HEAD
   "item.minecraft_gators.cooked_rotten_flesh": "Cooked Rotten Flesh",
   "item.minecraft_gators.betterite_shovel": "Betterite Shovel",
   "item.minecraft_gators.cat_jesus_dust_pickaxe": "Cat Jesus Dust Pickaxe",
@@ -94,6 +120,58 @@
   "item.minecraft_gators.cat_jesus_dust_armor_chestplate": "Cat Jesus Dust Chestplate",
   "item.minecraft_gators.cat_jesus_dust_dust": "Cat Jesus Dust",
   "advancements.just_why.title": "Just Why",
+=======
+  "subtitles.amongus_imposter_sound": "",
+  "item.minecraft_gators.cooked_rotten_flesh": "Cooked Rotten Flesh",
+  "item.minecraft_gators.betterite_shovel": "Betterite Shovel",
+  "item.minecraft_gators.cat_jesus_dust_pickaxe": "Cat Jesus Dust Pickaxe",
+  "block.minecraft_gators.cat_log_y_slab": "Cat Slab",
+  "block.minecraft_gators.cat_nip_plant": "Cat Nip Plant",
+  "entity.minecraft_gators.blaze_king": "Blaze King",
+  "block.minecraft_gators.cat_log_y_planks": "Cat Planks",
+  "block.minecraft_gators.compacted_cat_litter": "Compacted Cat Litter",
+  "item.minecraft.lingering_potion.effect.cat_jesuss_blood": "Lingering Potion of Cat Jesus\u0027s Blood",
+  "block.minecraft_gators.cat_log_y_fence_gate": "Cat Fence Gate",
+  "item.minecraft_gators.cat_jesus_dust_sword": "Cat Jesus Dust Sword",
+  "item.minecraft_gators.cat_nip_food_2": "Cooked Cat Nip",
+  "item.minecraft_gators.emerald_forged_armor_boots": "Emerald Forged Boots",
+  "advancements.blessed.title": "Blessed",
+  "block.minecraft_gators.infected_catalyst": "Infected Cat alyst",
+  "block.minecraft_gators.cat_dirt": "Cat Dirt",
+  "item.minecraft.tipped_arrow.effect.cat_jesuss_blood": "Arrow of Cat Jesus\u0027s Blood",
+  "block.minecraft_gators.cat_log_y_log": "Cat Log",
+  "item.minecraft.splash_potion.effect.cat_jesuss_blood": "Splash Potion of Cat Jesus\u0027s Blood",
+  "item.minecraft_gators.rats": "Music Disc",
+  "advancements.new_realms.descr": "Enter the Cat Realms",
+  "advancements.wherehaveyougone.title": "Where have you gone?",
+  "item.minecraft_gators.ruby": "Ruby",
+  "advancements.cover_me_with_cash.title": "Cover Me With Cash",
+  "item.minecraft_gators.cat_jesus_dust_armor_helmet": "Cat Jesus Dust Helmet",
+  "advancements.minecraftplus_gator_2.title": "Minecraft+ Gator",
+  "advancements.just_why.descr": "Obtain Cat Litter",
+  "item.minecraft_gators.betterite_ingot": "Betterite Ingot",
+  "item.minecraft_gators.litter_box": "Litter Box",
+  "item.minecraft_gators.betterite_pickaxe": "Betterite Pickaxe",
+  "advancements.outof_fire.title": "Out of Fire",
+  "block.minecraft_gators.cat_log_y_pressure_plate": "Cat Pressure Plate",
+  "block.minecraft_gators.cat_food_block": "Cat Food Block",
+  "itemGroup.tabminecraftplus_gator": "Minecraft+ Gator",
+  "advancements.hiddenby_bedrock.descr": "Obtain a Ruby",
+  "item.minecraft_gators.disc.desc": "Rick Astley - Never going to give you up ",
+  "item.minecraft_gators.betterite_armor_leggings": "Betterite Leggings",
+  "block.minecraft_gators.cat_log_y_fence": "Cat Fence",
+  "advancements.outof_fire.descr": "Slay the Blaze King",
+  "item.minecraft_gators.emerald_forged_armor_chestplate": "Emerald Forged Chestplate",
+  "item.minecraft_gators.unrefined_cat_nip": "Unrefined Cat Nip",
+  "item.minecraft_gators.betterite_hoe": "Betterite Hoe",
+  "item.minecraft_gators.emerald_forged_armor_leggings": "Emerald Forged Leggings",
+  "item.minecraft.potion.effect.cat_jesuss_blood": "Potion of Cat Jesus\u0027s Blood",
+  "advancements.new_realms.title": "New Realms",
+  "item.minecraft_gators.cat_jesus_dust_armor_chestplate": "Cat Jesus Dust Chestplate",
+  "item.minecraft_gators.cat_jesus_dust_dust": "Cat Jesus Dust",
+  "advancements.just_why.title": "Just Why",
+  "advancements.wherehaveyougone.descr": "Enter the Cat Food Plains",
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
   "advancements.cover_me_with_cash.descr": "Get emerald forged armor!",
   "biome.minecraft_gators.cat_food_plains": "Cat Food Plains",
   "item.minecraft_gators.disc": "Music Disc",

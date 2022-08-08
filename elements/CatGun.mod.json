@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "_fv": 28,
   "_type": "rangeditem",
@@ -34,4 +35,42 @@
     "bulletModel": "Modelcustom_model",
     "customBulletModelTexture": "nyancat.png"
   }
+=======
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "cancer",
+    "customModelName": "Normal",
+    "name": "Cat Gun",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MinecraftplusGator"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 569,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 9.0,
+    "bulletKnockback": 9,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Items.IRON_NUGGET"
+    },
+    "bulletModel": "Modelcustom_model",
+    "customBulletModelTexture": "nyancat.png"
+  }
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
 }

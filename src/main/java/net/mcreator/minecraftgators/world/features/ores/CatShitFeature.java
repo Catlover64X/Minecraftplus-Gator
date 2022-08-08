@@ -19,7 +19,11 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.block.state.BlockState;
+<<<<<<< HEAD
 import net.minecraft.world.level.block.Block;
+=======
+import net.minecraft.world.level.block.Blocks;
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
@@ -36,6 +40,7 @@ import java.util.Random;
 import java.util.List;
 
 public class CatShitFeature extends OreFeature {
+<<<<<<< HEAD
 	public static CatShitFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
@@ -54,6 +59,12 @@ public class CatShitFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
+=======
+	public static final CatShitFeature FEATURE = (CatShitFeature) new CatShitFeature().setRegistryName("minecraft_gators:cat_shit");
+	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
+			.configured(new OreConfiguration(CatShitFeatureRuleTest.INSTANCE, MinecraftGatorsModBlocks.CAT_SHIT.defaultBlockState(), 4))
+			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(63), VerticalAnchor.absolute(75)))).squared().count(4);
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("minecraft_gators:cat_desert"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
 			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("minecraft_gators:cat_realms")));
@@ -83,10 +94,17 @@ public class CatShitFeature extends OreFeature {
 		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
+<<<<<<< HEAD
 			if (base_blocks == null) {
 				base_blocks = List.of();
 			}
 			return base_blocks.contains(blockAt.getBlock());
+=======
+			boolean blockCriteria = false;
+			if (blockAt.getBlock() == Blocks.AIR)
+				blockCriteria = true;
+			return blockCriteria;
+>>>>>>> branch 'master' of https://github.com/Catlover64X/Minecraftplus-Gator.git
 		}
 
 		protected RuleTestType<?> getType() {
